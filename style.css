@@ -1,0 +1,53 @@
+.background {
+    background-color: saddlebrown;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    background-color: lightcoral;
+}
+nav p {
+    margin: 0;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.nav-links a:hover {
+    background-color: darkred;
+    color: white;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+p {
+    max-width: 120ch;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: left;
+    margin: 20px auto;
+}
+p.intro {
+    text-align: center;
+}
+
+footer  {
+    text-align: center;
+}
+
