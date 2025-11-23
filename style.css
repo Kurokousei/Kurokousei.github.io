@@ -68,9 +68,15 @@ body.has-sidebar {
 
 .container-box {
     margin: auto ;
-    padding: 0 50px;
+    padding: 0 100px;
     flex: 1;
     overflow-wrap: break-word;
+
+}
+.main-content {
+    border: 1px solid var(--md-sys-color-on-secondary-container);
+    background-color: var(--md-sys-color-surface-container-high);
+    border-radius: 16px;
 }
 
 .table-of-contents {
@@ -137,7 +143,10 @@ nav {
     justify-content: space-between;
     gap: 20px;
     padding: 10px;
-    background-color: var(--background);
+    /*background-color: var(--background);*/
+    background-color: var(--md-sys-color-surface-container-high);
+    border-radius: 10px;
+    border: 1px solid var(--md-sys-color-outline-variant);
 }
 nav p {
     margin: 0;
