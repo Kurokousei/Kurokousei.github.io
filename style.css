@@ -67,7 +67,6 @@ body {
     padding: 0 50px;
     flex: 1;
     overflow-wrap: break-word;
-
 }
 
 .table-of-contents {
@@ -78,10 +77,17 @@ body {
     min-width: 200px;
     height: 100vh;
     background-color: var(--md-sys-color-surface-container);
-    padding: 20px;
+    padding: 20px ;
     overflow-y: auto;
     border-right: 1px solid var(--md-sys-color-outline-variant);
+    border-radius: 0 10px 10px 0;
+}
 
+.content-of-table-of-contents {
+    background-color: var(--md-sys-color-surface-container-high);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid var(--md-sys-color-outline-variant)
 }
 
 .table-of-contents h3 {
@@ -114,7 +120,12 @@ body {
     /*background-color: darkred;*/
     color: white;
 }
-
+.table-of-contents nav {
+    background-color: var(--background);
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 10px;
+}
 
 nav {
     display: flex;
@@ -153,6 +164,7 @@ nav p {
     border-radius: 16px;
 }*/
 h2, h3 {
+    justify-content: center;
     text-align: center;
     color: var(--text-color);
 }
