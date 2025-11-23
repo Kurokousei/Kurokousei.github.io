@@ -178,7 +178,7 @@ p {
     font-size: 18px;
     margin: 20px auto;
     color: var(--text-color);
-    text-align: center;
+    text-align: left;
 }
 p.intro {
     text-align: center;
