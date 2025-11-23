@@ -58,8 +58,12 @@
 body {
     font-family: sans-serif;
     background-color: var(--background);
-    display: flex;
+
     margin: 0 ;
+}
+
+body.has-sidebar {
+    display: flex;
 }
 
 .container-box {
@@ -164,7 +168,6 @@ nav p {
     border-radius: 16px;
 }*/
 h2, h3 {
-    justify-content: center;
     text-align: center;
     color: var(--text-color);
 }
@@ -176,10 +179,39 @@ p {
     text-align: left;
     margin: 20px auto;
     color: var(--text-color);
+    text-align: center;
 }
 p.intro {
     text-align: center;
     color: var(--text-color);
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--text-color);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
 }
 
 footer  {
