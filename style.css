@@ -58,6 +58,56 @@
 body {
     font-family: sans-serif;
     background-color: var(--background);
+    display: flex;
+    margin: 0 ;
+}
+
+.container-box {
+    margin: auto ;
+    padding: 0 50px
+
+}
+
+.table-of-contents {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--md-sys-color-surface-container);
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.table-of-contents h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.table-of-contents ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.table-of-contents ul ul {
+    padding-left: 15px;
+}
+
+.table-of-contents li {
+    margin: 8px 0;
+}
+
+.table-of-contents a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 4px 0;
+}
+
+.table-of-contents a:hover {
+    color: var(--md-sys-color-primary);
 }
 
 
