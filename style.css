@@ -306,7 +306,7 @@ p.intro {
 
 }
 .adjacent-pictures .image-container {
-    margin: 0;
+   margin: 10px;
     flex: 1;
 }
 .adjacent-pictures .figure {
