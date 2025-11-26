@@ -285,7 +285,7 @@ p.intro {
 }
 
 .image-container img {
-    max-width: 50%;
+    max-width: 25%;
     height: auto;
     border-radius: 8px;
 }
@@ -295,6 +295,30 @@ p.intro {
     font-style: italic;
     color: var(--text-color);
     font-size: 16px;
+}
+
+.adjacent-pictures{
+    display: flex ;
+    gap: 0;
+    max-width: 50%;
+    margin: 30px auto;
+
+
+}
+.adjacent-pictures .image-container {
+    margin: 0;
+    flex: 1;
+}
+.adjacent-pictures .figure {
+    margin: 0;
+    padding: 0;
+}
+
+.adjacent-pictures img {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
 }
 
 table {
@@ -331,6 +355,7 @@ tbody tr:hover {
 tbody tr:last-child td {
     border-bottom: none;
 }
+
 
 footer  {
     text-align: center;
