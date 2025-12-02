@@ -68,6 +68,7 @@ body.has-sidebar {
 }
 
 .below-header {
+    margin: 20px 0;
     display: flex;
     flex: 1;
 }
