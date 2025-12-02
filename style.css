@@ -64,13 +64,19 @@ body {
 
 body.has-sidebar {
     display: flex;
+
 }
 
+.below-header {
+    display: flex;
+    flex: 1;
+}
 .container-box {
     margin: auto ;
     padding: 0 100px;
     flex: 1;
     overflow-wrap: break-word;
+
 
 }
 .main-content {
@@ -91,6 +97,7 @@ body.has-sidebar {
     overflow-y: auto;
     border-right: 1px solid var(--md-sys-color-outline-variant);
     border-radius: 0 10px 10px 0;
+    /*border-radius: 10px;*/
 }
 
 .content-of-table-of-contents {
@@ -147,6 +154,9 @@ nav {
     background-color: var(--md-sys-color-surface-container-high);
     border-radius: 10px;
     border: 1px solid var(--md-sys-color-outline-variant);
+
+
+
 }
 nav p {
     margin: 0;
@@ -354,6 +364,20 @@ tbody tr:hover {
 
 tbody tr:last-child td {
     border-bottom: none;
+}
+
+.main-content{
+    border: 1px solid var(--md-sys-color-on-secondary-container);
+    background-color: var(--md-sys-color-surface-container-high);
+    border-radius: 16px;
+    flex: 1; /* Add this to fill remaining space */
+    margin-left: 0;
+}
+.main-content p {
+    padding: 0 100px;
+}
+.main-content h2 {
+    padding: 20px;
 }
 
 
