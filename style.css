@@ -217,6 +217,7 @@ nav p {
     color: var(--text-color);
     text-decoration: none;
     padding: 5px 10px;
+    border-radius: 5px;
 }
 .nav-links a:hover {
     background-color: darkred;

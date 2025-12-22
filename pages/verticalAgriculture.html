@@ -35,170 +35,215 @@
 </head>
 
 <body class="dark has-sidebar">
-
-<aside class="table-of-contents">
-    <div class="content-of-table-of-contents">
-        <h3>Table of Contents</h3>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#vertical-farms">Vertical Farms: An Introduction and General Processes</a>
-                    <ul>
-                        <li><a href="#system-analysis">System Analysis</a></li>
-                        <li><a href="#global-assumptions">Global Assumptions, Options and Trades</a></li>
-                    </ul>
-                </li>
-                <li><a href="#architectural-layout">Architectural Layout and Internal Configuration</a>
-                    <ul>
-                        <li><a href="#baseline-design">Baseline Design</a></li>
-                        <li><a href="#ground-floor">Ground Floor Description</a></li>
-                    </ul>
-                </li>
-                <li><a href="#crop-cultivator">Crop Cultivator Selection</a></li>
-            </ul>
-        </nav>
-    </div>
-</aside>
-
-
 <div class="container-box">
     <nav>
         <p>Urban gardening</p>
         <div class="nav-links">
             <a href="../index.html">Home</a>
             <div class="dropdown">
-                <a href="#" class="dropdown-toggle">Projects</a>
+                <a href="#" class="dropdown-toggle">Projekte</a>
                 <div class="dropdown-content">
-                    <a href="exampleProject1.html">example Project 1</a>
-                    <a href="gothamGreens.html">Gotham Greens</a>
-                    <a href="kellyStreetGarden.html">Kelly Streets Garden</a>
-                    <a href="co2Reduction.html">CO2 Reduction</a>
-                    <a href="verticalAgriculture.html"> Vertical Farming</a>
+
+                    <div class="dropdown-item-with-submenu">
+                        <a href="#" class="submenu-toggle">New York City</a>
+                        <div class="submenu-container">
+                            <a href="newYork.html">New York</a>
+                            <a href="kellyStreetGarden.html">Kelly Streets Garden</a>
+                            <a href="gothamGreens.html">Gotham Greens</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-item-with-submenu">
+                        <a href="#" class="submenu-toggle">Frankfurt</a>
+                        <div class="submenu-container">
+                            <a href="frankfurt.html">Frankfurt</a>
+                            <a href="gallusGarten.html">Gallusgarten</a>
+                            <a href="gemueseheldinnen.html">Gemüseheldinnen</a>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="airQuality.html">Air Quality</a>
-            <a href="temperature.html">Temperature</a>
-            <a href="interests.html">Interests</a>
-            <a href="costReduction.html">Cost Reduction</a>
-            <a href="biodiversity.html">Biodiversity</a>
-            <a href="websiteImplementation.html">Website Implementation</a>
+            <a href="verticalAgriculture.html">Vertikale Landwirtschaft</a>
+            <a href="co2Reduction.html">CO2 Reduktion</a>
+            <a href="airQuality.html">Luftqualität</a>
+            <a href="temperature.html">Temperatur</a>
+            <a href="interests.html">Interessen</a>
+            <a href="costReduction.html">Kostenreduktion</a>
+            <a href="biodiversity.html">Biodiversität</a>
+            <a href="websiteImplementation.html">Webseitenimplementierung</a>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
+                <span id="theme-icon">☀️</span>
+            </button>
         </div>
     </nav>
-    <div class="main-content">
-        <h2 id="introduction">Introduction</h2>
-        <p>$\sqrt3$ 32$x^n + y^n = z^n$
-            $\sum_{n=4}^{p=3}$
-            Lorem ipsum &quot;dolor<sup>1</sup>&quot; sit amet, consectetur adipisicing elit. Harum illum impedit iste neque nobis non sapiente
-            vero! Aliquid commodi cum laboriosam repellat sapiente temporibus voluptas! $E=mc^2$ </p>
+    <div class="below-header">
+        <aside class="table-of-contents">
+            <div class="content-of-table-of-contents">
+                <h3>Table of Contents</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#vertical-farms">Vertical Farms: An Introduction and General Processes</a>
+                            <ul>
+                                <li><a href="#system-analysis">System Analysis</a></li>
+                                <li><a href="#global-assumptions">Global Assumptions, Options and Trades</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#architectural-layout">Architectural Layout and Internal Configuration</a>
+                            <ul>
+                                <li><a href="#baseline-design">Baseline Design</a></li>
+                                <li><a href="#ground-floor">Ground Floor Description</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#crop-cultivator">Crop Cultivator Selection</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="main-content">
+            <h2 id="introduction">Introduction</h2>
+            <p>$\sqrt3$ 32$x^n + y^n = z^n$
+                $\sum_{n=4}^{p=3}$
+                Lorem ipsum &quot;dolor<sup>1</sup>&quot; sit amet, consectetur adipisicing elit. Harum illum impedit
+                iste neque nobis non sapiente
+                vero! Aliquid commodi cum laboriosam repellat sapiente temporibus voluptas! $E=mc^2$ </p>
 
 
-        <h2 id="vertical-farms">Vertical Farms: An Introduction and General Processes</h2>
+            <h2 id="vertical-farms">Vertical Farms: An Introduction and General Processes</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deleniti, ea eius fuga magni nam
-            officiis
-            omnis quam quas qui quisquam sunt vero! Aliquam, commodi deleniti iure iusto labore non odit pariatur.
-            Accusantium aliquam at blanditiis consequuntur, deleniti doloribus dolorum ea eligendi esse explicabo ipsa
-            iure,
-            maiores obcaecati optio quae quod, recusandae rerum similique sint voluptatibus. Alias aut commodi cum
-            cupiditate, dolores et exercitationem illo, incidunt iste labore nemo, neque nobis nostrum saepe sint ullam
-            voluptates. Cupiditate deleniti dolore ducimus, explicabo facilis laborum minus odit sunt! Amet asperiores
-            consequuntur culpa debitis delectusvoluptas? Dicta?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deleniti, ea eius fuga magni nam
+                officiis
+                omnis quam quas qui quisquam sunt vero! Aliquam, commodi deleniti iure iusto labore non odit pariatur.
+                Accusantium aliquam at blanditiis consequuntur, deleniti doloribus dolorum ea eligendi esse explicabo
+                ipsa
+                iure,
+                maiores obcaecati optio quae quod, recusandae rerum similique sint voluptatibus. Alias aut commodi cum
+                cupiditate, dolores et exercitationem illo, incidunt iste labore nemo, neque nobis nostrum saepe sint
+                ullam
+                voluptates. Cupiditate deleniti dolore ducimus, explicabo facilis laborum minus odit sunt! Amet
+                asperiores
+                consequuntur culpa debitis delectusvoluptas? Dicta?</p>
 
-        <figure class="image-container">
-            <img src="../images/petr-magera--tbMPiOvwFA-unsplash.jpg"
-                 alt="Plants stacked up racks multiple meters high and 10s of meters deep" class="content-image">
-            <figcaption>
-                Figure 1: Indoor vertical farming setup
-            </figcaption>
-        </figure>
+            <figure class="image-container">
+                <img src="../images/petr-magera--tbMPiOvwFA-unsplash.jpg"
+                     alt="Plants stacked up racks multiple meters high and 10s of meters deep" class="content-image">
+                <figcaption>
+                    Figure 1: Indoor vertical farming setup
+                </figcaption>
+            </figure>
 
 
-        <h3 id="system-analysis">System Analysis</h3>
+            <h3 id="system-analysis">System Analysis</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at corporis cupiditate dignissimos
-            dolorum
-            ea exercitationem magnam quo sunt veritatis. A blanditiis exercitationem fugiat, incidunt iste iusto sed
-            ullam!
-            Dolorem eligendi, nemo obcaecati provident tenetur totam ullam. A ad adipisci aliquam animi asperiores, at
-            commodi, cupiditate debitis deserunt eaque eligendi explicabo fuga hic illo inventore ipsum itaque iusto
-            minus
-            modi nam non obcaecati odit optio perspiciatis placeat possimus quis quod rem repudiandae sequi veritatis
-            vitae
-            voluptates voluptatibus. Ab ad architecto at </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at corporis cupiditate dignissimos
+                dolorum
+                ea exercitationem magnam quo sunt veritatis. A blanditiis exercitationem fugiat, incidunt iste iusto sed
+                ullam!
+                Dolorem eligendi, nemo obcaecati provident tenetur totam ullam. A ad adipisci aliquam animi asperiores,
+                at
+                commodi, cupiditate debitis deserunt eaque eligendi explicabo fuga hic illo inventore ipsum itaque iusto
+                minus
+                modi nam non obcaecati odit optio perspiciatis placeat possimus quis quod rem repudiandae sequi
+                veritatis
+                vitae
+                voluptates voluptatibus. Ab ad architecto at </p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque beatae corporis culpa, delectus et
-            eveniet explicabo illo ipsa iste labore laudantium, nam necessitatibus non numquam, placeat porro possimus
-            quia
-            quod recusandae repellat soluta totam voluptas voluptatem voluptatum. Amet deleniti eveniet libero magni
-            minima
-            minus odio placeat! Blanditiis cumque praesentium quaerat quas qui quidem ratione rem repellat sequi ut
-            veritatis voluptas voluptate voluptates! Aspernatur cum deleniti esse ex excepturi, expedita facilis harum
-            illo
-            incidunt, ipsam, itaque laudantium magni molestias nesciunt odit perspiciatis possimus ratione vel voluptas
-            voluptatibus. Accusantium ad amet consectetur, consequatur cum debitis distinctio est fugit laboriosam
-            minima
-            natus, necessitatibus porro quas quia, reiciendis rem totam voluptate. Accusamus, esse itaque neque quia quo
-            rem
-            suscipit voluptate? Blanditiis facere laborum nam optio provident?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque beatae corporis culpa, delectus
+                et
+                eveniet explicabo illo ipsa iste labore laudantium, nam necessitatibus non numquam, placeat porro
+                possimus
+                quia
+                quod recusandae repellat soluta totam voluptas voluptatem voluptatum. Amet deleniti eveniet libero magni
+                minima
+                minus odio placeat! Blanditiis cumque praesentium quaerat quas qui quidem ratione rem repellat sequi ut
+                veritatis voluptas voluptate voluptates! Aspernatur cum deleniti esse ex excepturi, expedita facilis
+                harum
+                illo
+                incidunt, ipsam, itaque laudantium magni molestias nesciunt odit perspiciatis possimus ratione vel
+                voluptas
+                voluptatibus. Accusantium ad amet consectetur, consequatur cum debitis distinctio est fugit laboriosam
+                minima
+                natus, necessitatibus porro quas quia, reiciendis rem totam voluptate. Accusamus, esse itaque neque quia
+                quo
+                rem
+                suscipit voluptate? Blanditiis facere laborum nam optio provident?</p>
 
-        <h3 id="global-assumptions">Global Assumptions, Options and Trades</h3>
+            <h3 id="global-assumptions">Global Assumptions, Options and Trades</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam autem blanditiis dicta dignissimos
-            dolor dolorum est facere fuga illo inventore laudantium nostrum nulla numquam, perferendis quidem quisquam
-            recusandae saepe, sit vero. Inventore, iure quae. A eum inventore iste nam, ratione rerum veniam!
-            Dignissimos
-            earum mollitia officiis pariatur ut? Aut id ipsum nam nihil totam vero, voluptates? Alias aut cumque est eum
-            explicabo fugiat porro, quidem repellendus sint vel. Dolor facere iure laborum,</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam autem blanditiis dicta
+                dignissimos
+                dolor dolorum est facere fuga illo inventore laudantium nostrum nulla numquam, perferendis quidem
+                quisquam
+                recusandae saepe, sit vero. Inventore, iure quae. A eum inventore iste nam, ratione rerum veniam!
+                Dignissimos
+                earum mollitia officiis pariatur ut? Aut id ipsum nam nihil totam vero, voluptates? Alias aut cumque est
+                eum
+                explicabo fugiat porro, quidem repellendus sint vel. Dolor facere iure laborum,</p>
 
-        <h2 id="architectural-layout">Architectural Layout and Internal Configuration</h2>
+            <h2 id="architectural-layout">Architectural Layout and Internal Configuration</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad commodi consequatur corporis cumque
-            distinctio
-            eum, fugiat id iure, iusto minima necessitatibus nemo nihil nostrum odit optio placeat porro praesentium
-            provident quia rem repellendus sed soluta suscipit ut velit voluptatem voluptates! A amet aut blanditiis
-            culpa
-            cupiditate dignissimos dolore doloremque doloribus eius enim ex explicabo </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad commodi consequatur corporis cumque
+                distinctio
+                eum, fugiat id iure, iusto minima necessitatibus nemo nihil nostrum odit optio placeat porro praesentium
+                provident quia rem repellendus sed soluta suscipit ut velit voluptatem voluptates! A amet aut blanditiis
+                culpa
+                cupiditate dignissimos dolore doloremque doloribus eius enim ex explicabo </p>
 
-        <h3 id="baseline-design">Baseline Design</h3>
+            <h3 id="baseline-design">Baseline Design</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minus nobis quod sequi! Accusantium,
-            adipisci beatae blanditiis consequatur dicta distinctio doloremque dolorum ea eius eos iste magnam molestiae
-            nemo nulla pariatur praesentium quae quibusdam totam vero voluptas? Amet corporis dicta eius esse eveniet,
-            ex
-            expedita facilis id iure iusto laudantium neque, qui reiciendis repellendus soluta, unde veritatis! Adipisci
-            alias aliquid architecto, cupiditate fuga itaque modi pariatur quia quisquam quod repudiandae sed vero.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minus nobis quod sequi!
+                Accusantium,
+                adipisci beatae blanditiis consequatur dicta distinctio doloremque dolorum ea eius eos iste magnam
+                molestiae
+                nemo nulla pariatur praesentium quae quibusdam totam vero voluptas? Amet corporis dicta eius esse
+                eveniet,
+                ex
+                expedita facilis id iure iusto laudantium neque, qui reiciendis repellendus soluta, unde veritatis!
+                Adipisci
+                alias aliquid architecto, cupiditate fuga itaque modi pariatur quia quisquam quod repudiandae sed
+                vero.</p>
 
-        <h3 id="ground-floor">Ground Floor Description</h3>
+            <h3 id="ground-floor">Ground Floor Description</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores aspernatur dicta dolor dolores
-            dolorum ea
-            eligendi esse est excepturi expedita facere fuga fugit, harum hic illum impedit inventore ipsam ipsum
-            molestiae,
-            nobis nostrum obcaecati odit officiis omnis porro praesentium provident quidem recusandae rem, repellat
-            repudiandae sint soluta tempore unde voluptatibus voluptatum? Alias dolor doloribus error exercitationem
-            fugiat
-            ipsum repellendus. Alias aliquam aliquid architecto asperiores autem culpa cumque debitis distinctio, ea
-            eaque
-            excepturi exercitationem fuga, impedit in iure libero natus nihil nulla quas quos ratione recusandae rerum
-            sequi
-            tempore velit? </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores aspernatur dicta dolor dolores
+                dolorum ea
+                eligendi esse est excepturi expedita facere fuga fugit, harum hic illum impedit inventore ipsam ipsum
+                molestiae,
+                nobis nostrum obcaecati odit officiis omnis porro praesentium provident quidem recusandae rem, repellat
+                repudiandae sint soluta tempore unde voluptatibus voluptatum? Alias dolor doloribus error exercitationem
+                fugiat
+                ipsum repellendus. Alias aliquam aliquid architecto asperiores autem culpa cumque debitis distinctio, ea
+                eaque
+                excepturi exercitationem fuga, impedit in iure libero natus nihil nulla quas quos ratione recusandae
+                rerum
+                sequi
+                tempore velit? </p>
 
-        <h2 id="crop-cultivator">Crop Cultivator Selection</h2>
+            <h2 id="crop-cultivator">Crop Cultivator Selection</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad alias assumenda aut autem corporis
-            cum
-            deleniti dignissimos dolore doloribus earum est explicabo facere fugiat ipsa iusto modi nemo nihil nisi odit
-            omnis optio porro praesentium qui quia quos repellendus repudiandae sint unde, ut vel voluptas voluptate! Ab
-            ad
-            architecto asperiores commodi debitis dignissimos eius error eum facere ipsa ipsam itaque iusto labore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad alias assumenda aut autem
+                corporis
+                cum
+                deleniti dignissimos dolore doloribus earum est explicabo facere fugiat ipsa iusto modi nemo nihil nisi
+                odit
+                omnis optio porro praesentium qui quia quos repellendus repudiandae sint unde, ut vel voluptas
+                voluptate! Ab
+                ad
+                architecto asperiores commodi debitis dignissimos eius error eum facere ipsa ipsam itaque iusto
+                labore.</p>
+
+            <footer>
+                <p><sup>1</sup> This is an example quote </p>
+            </footer>
+
+        </div>
+
     </div>
     <button id="scroll-to-top" class="scroll-top-btn" title="Back to top">↑</button>
 
-    <footer>
-        <p><sup>1</sup> This is an example quote </p>
-    </footer>
-</div>
 
+</div>
 
 </body>
 </html>
