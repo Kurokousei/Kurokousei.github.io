@@ -1,3 +1,6 @@
+
+/*--------------------------------------Color Variables------------------------------------*/
+
 .dark {
     --md-sys-color-primary: rgb(174 209 141);
     --md-sys-color-surface-tint: rgb(174 209 141);
@@ -96,6 +99,7 @@
     --text-color: rgb(26 29 22);
 }
 
+/*--------------------------------------Layout------------------------------------*/
 
 body {
     font-family: sans-serif;
@@ -107,6 +111,10 @@ body {
 body.has-sidebar {
     display: flex;
 
+}
+
+body.flex-container {
+    display: flex;
 }
 
 .below-header {
@@ -122,12 +130,9 @@ body.has-sidebar {
 
 
 }
-.main-content {
-    border: 1px solid var(--md-sys-color-on-secondary-container);
-    background-color: var(--md-sys-color-surface-container-high);
-    border-radius: 16px;
-}
 
+
+/*--------------------------------------Table of Content------------------------------------*/
 .table-of-contents {
     position: sticky;
     left: 0;
@@ -146,8 +151,11 @@ body.has-sidebar {
 .content-of-table-of-contents {
     background-color: var(--md-sys-color-surface-container-high);
     border-radius: 16px;
-    padding: 20px;
-    border: 1px solid var(--md-sys-color-outline-variant)
+    padding: 15px;
+    border: 1px solid var(--md-sys-color-outline-variant);
+    max-width: 100%;
+    box-sizing: border-box;
+
 }
 
 .table-of-contents h3 {
@@ -166,6 +174,10 @@ body.has-sidebar {
 
 .table-of-contents li {
     margin: 8px 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+
 }
 
 .table-of-contents a {
@@ -174,6 +186,7 @@ body.has-sidebar {
     font-size: 14px;
     display: block;
     padding: 4px 0;
+    /*hyphens: auto;*/
 }
 
 .table-of-contents a:hover {
@@ -187,6 +200,8 @@ body.has-sidebar {
     margin-top: 10px;
 }
 
+
+/*--------------------------------------Navigation------------------------------------*/
 nav {
     display: flex;
     flex-direction: row;
@@ -197,9 +212,6 @@ nav {
     background-color: var(--md-sys-color-surface-container-high);
     border-radius: 10px;
     border: 1px solid var(--md-sys-color-outline-variant);
-
-
-
 }
 nav p {
     margin: 0;
@@ -211,6 +223,7 @@ nav p {
 .nav-links {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -223,6 +236,8 @@ nav p {
     background-color: darkred;
     color: white;
 }
+
+/*--------------------------------------Buttons------------------------------------*/
 
 .theme-toggle {
     background: none;
@@ -240,24 +255,6 @@ nav p {
 .theme-toggle:hover {
     background-color: darkred;
     color: white;
-}
-
-h2, h3 {
-    text-align: center;
-    color: var(--text-color);
-}
-
-p {
-    max-width: 120ch;
-    line-height: 1.6;
-    font-size: 18px;
-    margin: 20px auto;
-    color: var(--text-color);
-    text-align: left;
-}
-p.intro {
-    text-align: center;
-    color: var(--text-color);
 }
 
 .scroll-top-btn {
@@ -287,7 +284,27 @@ p.intro {
     opacity: 1;
     visibility: visible;
 }
+/*--------------------------------------Elements------------------------------------*/
+h2, h3 {
+    text-align: center;
+    color: var(--text-color);
+}
 
+p {
+    max-width: 120ch;
+    line-height: 1.6;
+    font-size: 18px;
+    margin: 20px auto;
+    color: var(--text-color);
+    text-align: left;
+}
+p.intro {
+    text-align: center;
+    color: var(--text-color);
+}
+
+
+/*--------------------------------------dropdown------------------------------------*/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -379,7 +396,7 @@ p.intro {
 .dropdown-item-with-submenu:hover .submenu-container {
     display: block;
 }
-
+/*--------------------------------------Image------------------------------------*/
 
 
 .content-image {
@@ -432,6 +449,7 @@ p.intro {
     width: 100%;
 }
 
+/*--------------------------------------Table------------------------------------*/
 table {
     width: 100%;
     max-width: 600px;
@@ -467,11 +485,14 @@ tbody tr:last-child td {
     border-bottom: none;
 }
 
+
+/*--------------------------------------Main Content------------------------------------*/
+
 .main-content{
     border: 1px solid var(--md-sys-color-on-secondary-container);
     background-color: var(--md-sys-color-surface-container-high);
     border-radius: 16px;
-    flex: 1; /* Add this to fill remaining space */
+    flex: 1;
     margin-left: 0;
 }
 .main-content p {
@@ -481,7 +502,7 @@ tbody tr:last-child td {
     padding: 20px;
 }
 
-
+/*--------------------------------------Footer------------------------------------*/
 footer  {
     text-align: center;
 }
