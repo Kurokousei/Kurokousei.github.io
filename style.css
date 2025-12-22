@@ -93,7 +93,7 @@ body.has-sidebar {
     width: 15%;
     min-width: 200px;
     height: 100vh;
-    background-color: var(--md-sys-color-surface-container);
+     /*background-color: var(--md-sys-color-surface-container);*/
     padding: 20px ;
     overflow-y: auto;
     border-right: 1px solid var(--md-sys-color-outline-variant);
@@ -180,13 +180,7 @@ nav p {
     background-color: darkred;
     color: white;
 }
-/*.container-box{
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 60px;
-    background-color: var(--md-sys-color-tertiary-container);
-    border-radius: 16px;
-}*/
+
 h2, h3 {
     text-align: center;
     color: var(--text-color);
@@ -277,10 +271,56 @@ p.intro {
     color: white;
 }
 
-/* Show dropdown on hover - THIS WAS MISSING */
+.dropdown-item-with-submenu {
+    position: relative;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.submenu-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submenu-toggle::after {
+    content: "â€º";
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.submenu-container {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: var(--md-sys-color-surface-container-high);
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 1001;
+}
+
+.submenu-container a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.submenu-container a:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* Show submenu on hover */
+.dropdown-item-with-submenu:hover .submenu-container {
+    display: block;
+}
+
+
 
 .content-image {
     max-width: 100%;
