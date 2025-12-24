@@ -135,7 +135,7 @@ body.flex-container {
     top: 0;
     width: 15%;
     min-width: 200px;
-    height: 100vh;
+    /*height: 50vh;*/
     /*background-color: var(--md-sys-color-surface-container);*/
     padding: 20px;
     overflow-y: auto;
@@ -515,7 +515,7 @@ tbody tr:last-child td {
     border: 1px solid var(--md-sys-color-on-secondary-container);
     background-color: var(--md-sys-color-surface-container-high);
     border-radius: 16px;
-    flex: 1;
+    /*flex: 1;*/
     margin-left: 0;
 }
 
@@ -529,16 +529,13 @@ tbody tr:last-child td {
 
 /*--------------------------------------Footer------------------------------------*/
 footer {
-    text-align: center;
-}
-
-footer h2 {
     margin-bottom: 0;
     padding-bottom: 0;
-}
 
-@media (prefers-color-scheme: dark) {
-    .main-content a:visited {
-        color: var(--md-sys-color-tertiary);
-    }
+
+}
+footer p {
+   margin: 20px 10px;
+   text-align: left;
+   font-size: .75rem;
 }
