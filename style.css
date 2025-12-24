@@ -94,8 +94,8 @@
     --md-sys-color-surface-container-high: rgb(230 232 225);
     --md-sys-color-surface-container-highest: rgb(225 227 219);
 
-    --background: var(--md-sys-color-background);
-    --text-color: rgb(26 29 22);
+    --background: var(--md-sys-color-surface-dim);
+    --text-color: black;
 }
 
 /*--------------------------------------Layout------------------------------------*/
@@ -302,6 +302,15 @@ p {
     color: var(--text-color);
     text-align: left;
 }
+ul {
+    padding-left: 80px;
+    max-width: 120ch;
+    line-height: 1.6;
+    font-size: 18px;
+    margin: 20px auto;
+    color: var(--text-color);
+
+}
 
 p.intro {
     text-align: center;
@@ -425,7 +434,7 @@ p.intro {
 }
 
 .image-container img {
-    max-width: 25%;
+    max-width: 50%;
     height: auto;
     border-radius: 8px;
 }
@@ -528,3 +537,8 @@ footer h2 {
     padding-bottom: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+    .main-content a:visited {
+        color: var(--md-sys-color-tertiary);
+    }
+}
