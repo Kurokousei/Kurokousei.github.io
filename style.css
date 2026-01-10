@@ -53,6 +53,8 @@
 
     --background: var(--md-sys-color-background);
     --text-color: var(--md-sys-color-primary-fixed-dim);
+    /*--text-color: lightgrey;*/
+    --hover-background: var(--md-sys-color-primary-fixed-dim);
 }
 
 .light {
@@ -237,6 +239,7 @@ nav p {
 
 .nav-links a:hover {
     background-color: darkred;
+    /*background-color: var(--hover-background);*/
     color: white;
 }
 
@@ -371,7 +374,11 @@ p.intro {
     position: relative;
 }
 
-.dropdown:hover .dropdown-content {
+/*.dropdown:hover .dropdown-content {*/
+/*    display: block;*/
+/*}*/
+
+.dropdown.active .dropdown-content {
     display: block;
 }
 
@@ -413,9 +420,19 @@ p.intro {
 }
 
 /* Show submenu on hover */
-.dropdown-item-with-submenu:hover .submenu-container {
+/*.dropdown-item-with-submenu:hover .submenu-container {*/
+/*    display: block;*/
+/*}*/
+
+.dropdown-item-with-submenu.active .submenu-container {
     display: block;
 }
+
+.dropdown-toggle::after {
+    content: ' ▼';
+    font-size: 0.8em;
+}
+
 
 /*--------------------------------------Image------------------------------------*/
 
