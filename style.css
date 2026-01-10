@@ -55,6 +55,7 @@
     --text-color: var(--md-sys-color-primary-fixed-dim);
     /*--text-color: lightgrey;*/
     --hover-background: var(--md-sys-color-primary-fixed-dim);
+    --visited-link-color: var(--md-sys-color-tertiary-fixed-dim);
 }
 
 .light {
@@ -98,6 +99,8 @@
 
     --background: var(--md-sys-color-surface-dim);
     --text-color: black;
+    --visited-link-color: blueviolet ;
+
 }
 
 /*--------------------------------------Layout------------------------------------*/
@@ -242,6 +245,19 @@ nav p {
     background-color: darkred;
     /*background-color: var(--hover-background);*/
     color: white;
+}
+
+p a:visited {
+    color: var(--visited-link-color);
+}
+
+figcaption a {
+    color: var(--text-color);
+}
+
+
+figcaption a:visited {
+    color: var(--visited-link-color);
 }
 
 /*--------------------------------------Buttons------------------------------------*/
