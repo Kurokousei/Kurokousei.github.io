@@ -83,158 +83,428 @@
                 <h3>Table of Contents</h3>
                 <nav>
                     <ul>
-                        <li><a href="#introduction">Introduction</a></li>
-                        <li><a href="#vertical-farms">Vertical Farms: An Introduction and General Processes</a>
+                        <li><a href="#introduction">Einleitung</a></li>
+                        <li><a href="#systeme">Systeme</a>
                             <ul>
-                                <li><a href="#system-analysis">System Analysis</a></li>
-                                <li><a href="#global-assumptions">Global Assumptions, Options and Trades</a></li>
+                                <li><a href="#hydroponik_systeme">Hydroponische Systeme</a>
+                                <ul>
+                                    <li><a href="#dochtsystem">Das Dochtsystem</a></li>
+                                    <li><a href="#tiefwasser_kultur">Die Tiefwasser-Kultur</a></li>
+                                    <li><a href="#ebbe_und_flut">Das Ebbe- und Flutsystem</a></li>
+                                    <li><a href="#tropfsystem">Das Tropfsystem</a></li>
+                                    <li><a href="#naehrstoff_film_tenchink">Die Nährstoff-Film-Technik (NFT-System)</a>
+                                    </li>
+                                </ul>
+                                </li>
+                                <li><a href="#aerponik_systeme">Aeroponische Systeme</a></li>
+                                <li><a href="#aquaponik_systeme">Aquaponische Systeme</a></li>
+
                             </ul>
                         </li>
-                        <li><a href="#architectural-layout">Architectural Layout and Internal Configuration</a>
-                            <ul>
-                                <li><a href="#baseline-design">Baseline Design</a></li>
-                                <li><a href="#ground-floor">Ground Floor Description</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#crop-cultivator">Crop Cultivator Selection</a></li>
+                        <li><a href="#fazit">Fazit</a></li>
                     </ul>
                 </nav>
             </div>
         </aside>
         <div class="main-content">
-            <h2 id="introduction">Introduction</h2>
-            <p>$\sqrt3$ 32$x^n + y^n = z^n$
-                $\sum_{n=4}^{p=3}$
-                Lorem ipsum &quot;dolor<sup>1</sup>&quot; sit amet, consectetur adipisicing elit. Harum illum impedit
-                iste neque nobis non sapiente
-                vero! Aliquid commodi cum laboriosam repellat sapiente temporibus voluptas! $E=mc^2$ </p>
+            <h1>Vertikale Landwirtschaft</h1>
+            <h2 id="introduction">Einleitung</h2>
+            <p>
+                In der vertikalen Landwirtschaft (auch bekannt unter Vertical Farming, Indoor Farming oder Urban
+                Farming) werden Pflanzen, die in Hochregalen gestapelt (Siehe Abb.1 und Abb. 2) sind und sich meistens
+                in kontrollierten
+                Umgebungen befinden (CEA), angebaut<sup>1</sup>. Diese Art des Anbaus ist in der Regel unabhängig vom Wetter und
+                Jahreszeit, da diese Hochregale in technisch ausgerüsteten Räumen stehen, die alles von Temperatur,
+                Luftfeuchtigkeit, Wasser- und Nährstoffverbrauch bis hin zur Beleuchtung durch LEDs kontrollieren und
+                regeln. Die Größe des Systems ist irrelevant (Siehe Abb. 3). Zum Beispiel, wenn ein System in einem 5 m2
+                großen Raum,
+                einem Kleiderschrank oder Ähnlichem steht, gilt dies ebenso als Vertical Farming als ein System, das
+                aufwendig über mehrere Stockwerke aufgebaut ist. Diese Systeme sind zwar vorwiegend in Räumlichkeiten
+                untergebracht, es ist aber keine Notwendigkeit. Es gibt Systeme, die im Freien aufgestellt werden
+                können. Dies ermöglicht es auch Hobbyisten oder kleinere kommerzielle Anlagen zu bauen. Diese können
+                innerhalb von Stadtvierteln, Gemeinde oder auch für den persönlichen Gebrauch genutzt werden. Das
+                namensgebende Feature ist hierbei die vertikale Stapelung der Pflanzen für die Nahrungsmittelproduktion.
 
+            </p>
 
-            <h2 id="vertical-farms">Vertical Farms: An Introduction and General Processes</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deleniti, ea eius fuga magni nam
-                officiis
-                omnis quam quas qui quisquam sunt vero! Aliquam, commodi deleniti iure iusto labore non odit pariatur.
-                Accusantium aliquam at blanditiis consequuntur, deleniti doloribus dolorum ea eligendi esse explicabo
-                ipsa
-                iure,
-                maiores obcaecati optio quae quod, recusandae rerum similique sint voluptatibus. Alias aut commodi cum
-                cupiditate, dolores et exercitationem illo, incidunt iste labore nemo, neque nobis nostrum saepe sint
-                ullam
-                voluptates. Cupiditate deleniti dolore ducimus, explicabo facilis laborum minus odit sunt! Amet
-                asperiores
-                consequuntur culpa debitis delectusvoluptas? Dicta?</p>
-
+            <div class="adjacent-pictures">
+                <figure class="image-container">
+                    <img src="../images/VF_petr-magera--tbMPiOvwFA-unsplash.jpg"
+                         alt="Hochregale worin Pflanzen wachsen. Sie werden mit UV-Licht beleuchtet."
+                         class="content-image">
+                    <figcaption>
+                        Abb. 1: Hochregale worin Pflanzen wachsen. Sie werden mit UV-Licht beleuchtet.
+                        - Photo von <a href="https://unsplash.com/@mpetrucho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Petr Magera</a> on <a href="https://unsplash.com/photos/a-large-room-filled-with-lots-of-plants--tbMPiOvwFA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </figcaption>
+                </figure>
+                <figure class="image-container">
+                    <img src="../images/VF_tasha-kostyuk-Ake0yAy_Y98-unsplash.jpg"
+                         alt="Hochregale worin Pflanzen wachsen. Sie werden mit normalen Licht beleuchtet."
+                         class="content-image">
+                    <figcaption>
+                        Abb. 2: Hochregale worin Pflanzen wachsen. Sie werden mit normalen Licht beleuchtet. - Photo von
+                        <a href="https://unsplash.com/@tashakostyuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tasha Kostyuk</a> on <a href="https://unsplash.com/photos/a-vertical-garden-system-with-plants-growing-in-it-Ake0yAy_Y98?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <p>
+                Vertical Farming Systeme haben gegenüber der traditionellen Landwirtschaft verschiedene Vor- und
+                Nachteile<sup>2</sup>. Sie verbrauchen weniger Platz, da die Pflanzen in Hochregalen gestapelt werden. Somit kann
+                bei gleicher Fläche mehr angebaut werden als bei der traditionellen Landwirtschaft, womit folglich der
+                Ertrag pro m2 um ein Vielfaches gesteigert werden kann, je nachdem wie hoch die Anlage gebaut wird. Da
+                die Pflanzen, in der Regel, nicht in der Erde eingepflanzt werden, sondern ihre Nährstoffe anderweitig
+                erhalten<sup>3</sup> (siehe Hydroponische Systeme, etc.) und sich in einem kontrollierten Bereich befinden, ist das
+                Risiko von Insektenbefall und Pflanzenkrankheiten gering<sup>4</sup>, was die Verwendung von Pestiziden verringert.
+                Hierbei ist zu beachten, ob die Anlage im Freien steht, da im Freien Insekten Zugriff auf die Pflanzen
+                haben können.
+            </p>
             <figure class="image-container">
-                <img src="../images/petr-magera--tbMPiOvwFA-unsplash.jpg"
+                <img src="../images/VF_tasha-kostyuk-59erC9c_jIY-unsplash.jpg"
+                     alt="Mehrstöckiges Indoor-Hydrokultursystem mit LED-Beleuchtung." class="content-image">
+                <figcaption>
+                    Abb. 3: Mehrstöckiges Indoor-Hydrokultursystem mit LED-Beleuchtung.
+                    - Photo by <a href="https://unsplash.com/@tashakostyuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tasha Kostyuk</a> on <a href="https://unsplash.com/photos/a-vegetable-garden-is-growing-in-a-greenhouse-59erC9c_jIY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </figcaption>
+            </figure>
+            <p>
+                Die Pflanzen erhalten ihre Nährstoffe direkt über das verwendete Wasser, mit dem ihre Wurzeln Kontakt
+                haben. Somit kann die Wasser- und Dünger Versorgung besser reguliert werden. Dadurch wird der Wasser-
+                und Düngerverbrauch drastisch reduziert. Die geringere Verbrauch kann je nach Recycling-System bei bis
+                zu 95% liegen<sup>5</sup>. Dies ist besonders in Regionen von Vorteil, bei denen die Gegebenheiten für traditionelle
+                Landwirtschaft suboptimal sind, wie zum Beispiel im kalten Norden oder in Trockenregionen wie im Nahen
+                Osten. Durch den geringeren Wasserverbrauch können auch in solchen Regionen Nahrungsmittel angebaut
+                werden trotz evtl. Schwierigkeiten mit normalen Anbauflächen. Dies ist zum Beispiel der Fall, wenn kein
+                gutes Ackerland zur Verfügung steht, sei es durch die Qualität der Erde in den Feldern oder durch
+                Platzmangels (z.B. Singapur). In solchen Fällen bietet es sich an, in temperaturgeregelten Gebäuden
+                Nahrungsmittel anzubauen.
+            </p>
+            <p>
+                Die Temperaturregelung ist in solchen Regionen ein wichtiges Thema, das hohe Beachtung finden muss. Die
+                Temperaturregelungsstrategien müssen an die Gegebenheiten angepasst werden. Hiermit sind oft hohe
+                Elektrizitätskosten verbunden<sup>6</sup>.. Die Gebäude benötigen viel Strom, um die benötigten Systeme am Laufen zu
+                halten. Die Subsysteme für Temperaturregelung, Pflanzenüberwachung, LED-Beleuchtung usw. sind essentiell
+                für Vertical Farming, jedoch leider auch der Kostentreiber beim Betrieb einer solchen Anlage.
+                Elektrizitätskosten können zwischen einem erfolgreichen Betrieb oder ihrem Untergang entscheiden. Aus
+                diesem Grund hat Vertical Farming in manchen Teilen der Welt bessere Chancen, sich zu etablieren, als in
+                anderen. Zum Beispiel sind in Deutschland die Stromkosten zu hoch, um einen erfolgreichen Betrieb einer
+                Anlage zu garantieren. Somit ist die benötigte Menge an Energie deutlich höher als bei traditioneller
+                Landwirtschaft oder auch bei Projekten wie Gothem Greens in New York oder Gemüseheldinnen in Frankfurt,
+                da hier die Sonne kostenfrei für die benötigte Beleuchtung sorgt<sup>7</sup>.. Die hohen Elektrizitätskosten können
+                den Preis der Ware zu unattraktiv gestalten, wodurch sich die Anlage nicht rentieren würde. In anderen
+                Ländern wie im Nahen Osten könnte jedoch der Strompreis stimmen oder es gibt andere Gründe, um so eine
+                Anlage zu bauen. Ein Grund könnte sein, sich unabhängiger von Nahrungsmittelimporten zu machen.
+                Es ist also wichtig, die Stromkosten günstig zu halten, aber auch auf die Quelle der Stromerzeugung zu
+                achten.
+            </p>
+            <p>
+                Wenn Klimaschutz für den Bau einer solchen Anlage sinnvollerweise mitberücksichtigt werden soll, ist die
+                Nutzung von grüner Energie ratsam. Ansonsten können die CO2-Emission durch Vertical Farming bis zu
+                16-mal höher sein als beim Freilandanbau<sup>8</sup>. Vertical Farming hat Vorteile für den Klimaschutz. Der
+                geringere Wasserverbrauch trägt dazu bei, dass bestehende Grundwasser, Flüsse oder andere Gewässer
+                bewahrt werden oder zumindest die Übernutzung von Wasser aus Gewässer für Landwirtschaft reduziert
+                werden kann. Somit könnte der Austrocknung von Binnenmeeren, Flüssen und dem Grundwasser entgegengewirkt
+                werden. Durch die geringere Verwendung von Dünger in einem weitgehend geschlossenen System gelangen
+                keine oder kaum Schadstoffe in den Böden und dem Grundwasser. Die nicht verwendeten Nährstoffe werden
+                dem System wieder zugeführt. Durch geringere Transportwege kann CO2 eingespart werden. Jedoch muss hier
+                beachtet werden, dass die Stromquelle für die Anlage aus grüner Energie stammt, damit eine positive
+                Auswirkung für das Klima besteht.
+            </p>
+            <p>
+                Anlagen für Vertical Farming eignen sich am besten für Pflanzen, die keinen hohen Energiebedarf haben
+                (Beleuchtung, Klimaanlagen, Wasserpumpen, etc.), deren Wachstumszeit gering ist und nicht viel Platz
+                benötigen. Der Verkaufspreis der Nahrungsmittel muss auch rentabel sein. Deswegen werden meistens
+                Blattgemüse, Salate, Kräuter und Microgreens angebaut. Tomaten, Erdbeeren, Paprika. Gurken, etc. können
+                auch angebaut werden, brauchen aber mehr Platz und Energie. Dies spiegelt sich im Verkaufspreis wider.
+                Getreide, Kartoffeln oder Obstbäume sind aus den oben genannten Gründen nicht wirtschaftlich genug und
+                werden aus diesem Grund meistens gemieden.
+            </p>
+
+            <h2 id="systeme">Systeme</h2>
+            <p>
+                Die verwendeten Systeme in Vertical Farming sind in der Grundidee gleich, aber die Ausführung ist
+                unterschiedlich. Die Pflanzen können in verschiedenen Arten angebaut werden. Dabei müssen Sie nicht
+                unbedingt gestapelt in Hochregalen angebaut werden. Die verschiedenen hydroponischen Systeme setzen dies
+                nicht zwingend voraus. Jedoch wird dies aus Platzgründen in kommerziellen Anwendungen bevorzugt. Die
+                Wurzeln der Pflanzen werden direkt mit den Nährstoffen in Kontakt gebracht. Wie dies funktioniert und
+                welche Systeme es gibt, wird in dem folgenden Teil betrachtet<sup>9</sup>.
+            </p>
+
+
+            <h3 id="hydroponik_systeme">Hydroponische Systeme</h3>
+            <p>
+                Hydroponische Systeme verwenden vier Komponenten, um einen möglichst hohen Ernteertrag zu erzielen.
+                Diese vier Komponenten sind:
+            </p>
+            <ul>
+                <li>das Hydroponik-System,</li>
+                <li>die Nährlösung,</li>
+                <li>das Substrat,</li>
+                <li>die Lampen.</li>
+            </ul>
+            <p>
+                Das Hydroponik-System ist die Art und Weiße wie die Nährstoffe in Kontakt mit der Pflanze gebracht
+                werden. Die Nährstoffe sind in Wasser aufgelöst und müssen dementsprechend zu den Wurzeln der Pflanzen
+                transportiert werden. Dies ist durch verschiedene Möglichkeiten (Systemtypen) erreichbar<sup>10</sup>. Diese sind:
+            </p>
+            <ul>
+                <li>das Dochtsystem,</li>
+                <li>die Tiefwasser-Kultur,</li>
+                <li>das Ebbe- und Flutsystem</li>
+                <li>das Tropfsystem,</li>
+                <li>die Nährstoff-Film-Technik (NFT-System),</li>
+                <li>die Aeroponik.</li>
+            </ul>
+            <p>
+                Die Aeroponik wird im nächsten Abschnitt behandelt. Diese Systeme unterscheiden sich praktisch in ihrem
+                Konzept, ihren Eigenschaften und dem erforderlichen Equipment, erfüllen jedoch den oben genannten Zweck.
+                Die Systemtypen verfügen alle über ein Wasserreservoir, in dem sich die Nährstofflösung befindet<sup>11</sup>. Im
+                Grunde ist eine Pflanze durch einen Substrat in einem Pflanzenbehälter fixiert (z.B. Steinwolle,
+                Kokosfasern, Perlit, Kies, usw.). Das Substrat versorgt die Pflanze nicht mit Nährstoffen, jedoch
+                beeinflusst es die Sauerstoff-, Wasser- und Nährstoffzufuhr. Die Wurzeln ragen vom Substrat ins
+                Wasserreservoir und nehmen darüber die Nährstoffe, die sich in der Nährstofflösung befinden, auf<sup>12</sup>.
+                Zusätzlich zu den genannten Systemtypen gibt es auf diesen basierende Variationen (z. B. die
+                Kratky-Methode, Fogponics, Dutch Buchet System), die auf die Bedürfnisse der Pflanzen besser angepasst
+                sind, auf die hier nicht weiter eingegangen wird.
+            </p>
+            <p>
+                Hydroponische Systeme werden in zwei Kategorien unterschieden. Ob sie aktiv oder passiv sowie ob sie
+                zirkulierende oder nicht zirkulierende Systeme sind. Der Unterschied zwischen einem aktiven und passiven
+                Hydroponik-System liegt darin, ob elektrische Komponenten verwendet werden, wie zum Beispiel Luft- und
+                Wasserpumpen. Der Unterschied zwischen zirkulierenden und nicht zirkulierenden Systemen liegt darin, ob
+                die Systeme die Nährstofflösung zurück ins System eingespeist und somit die Wurzeln der Pflanzen
+                mehrfach erreichen können. Ein aktives System hat mehr Stromkosten als ein passives System, da passive
+                Systeme keine elektrischen Komponenten haben (wie oben beschrieben), hat jedoch Vorteile gegenüber einem
+                passiven System. Durch die Verwendung von Luftpumpen kann die Nährstofflösung mit Sauerstoff
+                angereichert werden, was das Wachstum der Pflanze fördert und das Bilden von Algen verhindert. Eine
+                Wasserpumpe ermöglicht es, die oben genannten Systemtypen zu realisieren und somit die Effizienz und den
+                Ertrag zu steigern.
+                Ein passives System ist jedoch unabhängig vom elektronischen Equipment und der Art der Stromerzeugung.
+                Bedeutet keine CO2-Emissionen und keine Stromkosten, jedoch leidet die Effizienz und der Ertrag ist
+                geringer. Passive Systeme haben einen geringeren Wartungsaufwand, was für bestimmte Situationen von
+                Vorteil sein kann<sup>13</sup>.
+
+            </p>
+
+            <h4 id="dochtsystem">Das Dochtsystem</h4>
+            <p>
+                Beim Dochtsystem wird die Nährstofflösung durch ein Docht zu den Pflanzenwurzeln transportiert. Die
+                Pflanze sitzt, fixiert durch ein Substrat, in einem Netztopf. Das obere Ende des Dochtes ist in Kontakt
+                mit den Wurzeln der Pflanze und das untere Ende ist in der Nährstofflösung. Das ist ein passives System,
+                da die Nährstofflösung durch den Kapillareffekt durch den Docht zu den Wurzeln aufsteigt. So ein System
+                ist kostengünstig und ist einfach in Stand zu halten. Jedoch ist die Menge an Nährstofflösung, die durch
+                den Docht transportiert werden kann, recht gering und somit auch die Effizienz des Systems. Der Ertrag
+                ist dementsprechend. Am besten geeignet für Pflanzen mit geringen Wasseranforderungen wie Kräutern. Bei
+                höheren Wasseranforderungen können entweder ein dickeres oder ein zusätzlicher Docht verwendet werden<sup>14</sup>.
+            </p>
+            <figure class="image-container">
+                <img src="../images/VF_petr-magera--tbMPiOvwFA-unsplash.jpg"
                      alt="Plants stacked up racks multiple meters high and 10s of meters deep" class="content-image">
                 <figcaption>
-                    Figure 1: Indoor vertical farming setup
+                    Abb. 4: Indoor vertical farming setup
+                </figcaption>
+            </figure>
+
+            <h4 id="tiefwasser_kultur">Die Tiefwasser-Kultur</h4>
+            <p>
+                Die Tiefwasser-Kultur ist ein passives System. Die Pflanze sitzt über dem Wasserreservoir in einem
+                Netztopf, fixiert durch ein Substrat. Der Netztopf befindet sich auf einer schwimmenden Plattform (z.B.
+                Styropor). Die Wurzeln der Pflanze ragen direkt in das Wasser mit der Nährstofflösung. Somit werden die
+                Wurzeln ständig mit Wasser und Nährstoffen versorgt. Jedoch kann es in diesem System zu Sauerstoffmangel
+                in der Näherungslösung kommen. Um dies entgegenzuwirken können Luftpumpen angebracht werden, was aber
+                das System von einem passiven in ein aktives System umwandelt. Der geringe Wartungsaufwand im passiven
+                Zustand des Systems wird somit aufwändiger und die Kosten steigen durch die Verwendung von Pumpen. Der
+                Ertrag von diesem System ist hoch. Am besten ist das System geeignet für Pflanzen mit niedrigem
+                Sauerstoffbedarf<sup>15</sup>.
+            </p>
+
+            <figure class="image-container">
+                <img src="../images/VF_petr-magera--tbMPiOvwFA-unsplash.jpg"
+                     alt="Plants stacked up racks multiple meters high and 10s of meters deep" class="content-image">
+                <figcaption>
+                    Abb. 5: Indoor vertical farming setup
+                </figcaption>
+            </figure>
+
+            <h4 id="ebbe_und_flut">Das Ebbe- und Flutsystem</h4>
+            <p>
+                Das Ebbe und Flutsystem is ein aktives und zirkulierendes Sytem. Die Wurzeln der Pflanzen werden in
+                zeitlichen Abständen, kontrolliert durch einen Timer, in Kontakt mit der Nährstofflösung gebracht. Dabei
+                wird die Nährstofflösung vom Wasserreservoir hoch in das Substrat gepumpt, welches dann durch einen
+                kleinen Abguss wieder ins Wasserreservoir zurückgeführt wird. Dies ist ein automatisiertes System, bei
+                dem die Bewässerungszeiten nach Belieben eingestellt werden können. Dies erlaubt es Pflanzen mit
+                verschiedenen Wasseranforderungen anzubauen, wie zum Beispiel Pflanzen, die aus trockenen oder feuchten
+                Regionen stammen. Der Wartungsaufwand und die Stromkosten sind durch die Verwendung von elektronischen
+                Geräten höher als bei den vorherigen Systemen. Durch die Effizienz des Systems ist der Ertrag hoch. Das
+                System ist geeignet für den Anbau von Tomaten, Gurken und Ähnlichem sowie mediterrane Kräuter<sup>16</sup>.
+            </p>
+            <figure class="image-container">
+                <img src="../images/VF_petr-magera--tbMPiOvwFA-unsplash.jpg"
+                     alt="Plants stacked up racks multiple meters high and 10s of meters deep" class="content-image">
+                <figcaption>
+                    Abb. 6: Indoor vertical farming setup
+                </figcaption>
+            </figure>
+
+            <h4 id="tropfsystem">Das Tropfsystem</h4>
+            <p>
+                Das Tropfsystem ist häufig ein nicht zirkulierendes aktives System konzipiert, kann aber auch als ein
+                zirkulierendes System implementiert werden. Es ist oft in kommerziellen Anwendungen vorzufinden. Der
+                Bewässerungsintervall kann optimal den Pflanzen angepasst werden, da diese nur durch Tropfen bewässert
+                werden. Wenn das System zirkulierend implementiert ist, werden die Pflanzen in den Netztöpfen über dem
+                Wasserreservoir platziert, so dass die Nährstofflösung durch überschüssiges Bewässern zurück ins
+                Wasserreservoir fließen kann. Die Nährstofflösung wird kontinuierlich durch den Schlauch zu den
+                einzelnen Pflanzen gepumpt. Das System ist leicht erweiterbar. Die Dosierung ist effizient, da die
+                Pflanzen tropfenweise bewässert werden. Jedoch ist der Wartungsaufwand hoch, da die Düsen verstopfen
+                können. Die Anschaffungskosten sind auch hoch, da jede Pflanze ihren eigenen Schlauch mit Düsen, usw.
+                benötigt. Da das System auf individuelle Pflanzen eingestimmt werden kann, sind die Anbaumöglichkeiten
+                in der Theorie unbegrenzt. Andere Faktoren wie Platz, Stromkosten, usw. diktieren, was der Betreiber
+                eines Tropfsystems anbauen möchte<sup>17</sup>.
+            </p>
+            <figure class="image-container">
+                <img src="../images/VF_petr-magera--tbMPiOvwFA-unsplash.jpg"
+                     alt="Plants stacked up racks multiple meters high and 10s of meters deep" class="content-image">
+                <figcaption>
+                    Abb. 7: Indoor vertical farming setup
+                </figcaption>
+            </figure>
+
+            <h4 id="naehrstoff_film_tenchink">Die Nährstoff-Film-Technik (NFT-System)</h4>
+            <p>
+                Die Nährstoff-Film-Technik ist ein System, in dem die Pflanzen mit den Substraten in Netztöpfen in
+                Löchern an Röhren platziert werden. Das Wasser mit der Nährstofflösung wird vom Wasserreservoir in diese
+                Röhre gepumpt. Die Rohre sind leicht angewinkelt angebracht, so dass das Wasser mit der Nährstofflösung
+                dem Rohr entlang fließen kann. Dabei kommen die Wurzeln in Kontakt mit dem Wasser und der
+                Nährstofflösung. Es ist entscheidend, dass der Nährstrofffilm im Rohr dünn ist. Am Ende des Rohres ist
+                ein Abfluss zum Wasserreservoir. Bei diesem System können mehrere Rohre übereinander angebracht werden,
+                so dass die Nährstofflösung von einem Rohr ins andere fließt. Beim letzten Rohr fließt die
+                Nährstofflösung zurück ins Wasserreservoir. Das macht ein platzsparendes und effizientes System, da die
+                Pflanzen konstant mit Wasser, Nährstoffen und Sauerstoff versorgt sind. Der Ertrag ist dementsprechend
+                hoch. Die Wasserpumpe ist hier eine Schwachstelle, da das Wasser mit der Nährstofflösung kontinuierlich
+                laufen muss, ansonsten können die Pflanzen austrocknen. Pflanzen mit langen Wurzeln sind ungeeignet für
+                diese Konstruktion, da diese die Rohre blockieren könnten und das Gewicht der Pflanzen evtl. zu schwer
+                für die Rohrkonstruktion sein können. Aus diesem Grund eignen sich eher Pflanzen mit kurzer
+                Wachstumsperiode und kleinen Wurzeln für dieses System. Also Salate, Kräuter, Erdbeeren und Ähnliches<sup>18</sup>.
+            </p>
+            <figure class="image-container">
+                <img src="../images/VF_petr-magera--tbMPiOvwFA-unsplash.jpg"
+                     alt="Plants stacked up racks multiple meters high and 10s of meters deep" class="content-image">
+                <figcaption>
+                    Abb. 8: Indoor vertical farming setup
                 </figcaption>
             </figure>
 
 
-            <h3 id="system-analysis">System Analysis</h3>
+            <h3 id="aerponik_systeme">Aeroponische Systeme</h3>
+            <p>
+                Das Aeroponik-System ist auch ein hydroponisches System. Somit ist der Grundgedanke identisch, jedoch
+                ist die Kontaktaufnahme von der Nährstofflösung ein wenig anders. Die Wurzeln der Pflanze hängen in der
+                Luft und sind nicht mit einem Substrat fixiert. Die Pflanzen werden mit Düsen mit der Nährstofflösung
+                angesprüht und werden so optimal mit Wasser, Nährstoffen und Sauerstoff versorgt. Nicht absorbierte
+                Nährstofflösung fällt dabei zurück ins Wasserreservoir, das sich unter den Pflanzen befindet. Dieses
+                System ist unter den Systemtypen am aufwändigsten und ist ein aktives zirkulierendes System. Die Wurzeln
+                können sich hier frei ausbreiten, da sie nichts blockieren können. Die Effizienz ist hoch und somit ist
+                der Ertrag dementsprechend. Der Wartungsaufwand ist hoch, da es viele Einzelteile gibt und die Schläuche
+                und Düsen durch Ablagerungen der Nährstofflösung blockiert werden können. Es können verschiedene
+                Pflanzen angebaut werden<sup>19</sup>.
+            </p>
+            <figure class="image-container">
+                <img src="../images/VF_petr-magera--tbMPiOvwFA-unsplash.jpg"
+                     alt="Plants stacked up racks multiple meters high and 10s of meters deep" class="content-image">
+                <figcaption>
+                    Abb. 9: Indoor vertical farming setup
+                </figcaption>
+            </figure>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at corporis cupiditate dignissimos
-                dolorum
-                ea exercitationem magnam quo sunt veritatis. A blanditiis exercitationem fugiat, incidunt iste iusto sed
-                ullam!
-                Dolorem eligendi, nemo obcaecati provident tenetur totam ullam. A ad adipisci aliquam animi asperiores,
-                at
-                commodi, cupiditate debitis deserunt eaque eligendi explicabo fuga hic illo inventore ipsum itaque iusto
-                minus
-                modi nam non obcaecati odit optio perspiciatis placeat possimus quis quod rem repudiandae sequi
-                veritatis
-                vitae
-                voluptates voluptatibus. Ab ad architecto at </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque beatae corporis culpa, delectus
-                et
-                eveniet explicabo illo ipsa iste labore laudantium, nam necessitatibus non numquam, placeat porro
-                possimus
-                quia
-                quod recusandae repellat soluta totam voluptas voluptatem voluptatum. Amet deleniti eveniet libero magni
-                minima
-                minus odio placeat! Blanditiis cumque praesentium quaerat quas qui quidem ratione rem repellat sequi ut
-                veritatis voluptas voluptate voluptates! Aspernatur cum deleniti esse ex excepturi, expedita facilis
-                harum
-                illo
-                incidunt, ipsam, itaque laudantium magni molestias nesciunt odit perspiciatis possimus ratione vel
-                voluptas
-                voluptatibus. Accusantium ad amet consectetur, consequatur cum debitis distinctio est fugit laboriosam
-                minima
-                natus, necessitatibus porro quas quia, reiciendis rem totam voluptate. Accusamus, esse itaque neque quia
-                quo
-                rem
-                suscipit voluptate? Blanditiis facere laborum nam optio provident?</p>
+            <h3 id="aquaponik_systeme">Aquaponische Systeme</h3>
+            <p>
+                Ein Aquaponik-System verbindet ein hydroponisches System mit der Fischzucht. Die Ausscheidungen von
+                Fischen werden mit Hilfe von Bakterien in Nitrit und dann in Nitrat umgewandelt. Dies ist der Nährstoff
+                für die Pflanze. Das nitrathaltige Wasser aus dem Fischbecken wird den Pflanzen als Dünger zugeführt,
+                die das Wasser reinigen. Das gereinigte Wasser wird dann wieder dem Fischbecken zugeführt. Somit
+                entsteht ein natürlicher Kreislauf, mit dem zwei Ressourcen gewonnen werden können.
+                Um ein solches System erfolgreich zu betreiben, ist ein gutes Verständnis von Biologie, Technologie und
+                dem benötigten Gleichgewicht zwischen Pflanzen und Fischen erforderlich.
+                Wenn es Probleme bei der Ratio zwischen Fisch und Pflanzen, die Wassertemperatur und pH-Werte, die
+                Bakterienkulturen für die Nährstoffproduktion, die Sauerstoffversorgung oder der artgerechte
+                Fischhaltung gibt, kann keine erfolgreiche Aquaponik betrieben werden. Somit ist der Aufwand für den
+                Betrieb groß, vor allem da dies ein zusätzlicher Aufwand ist. Da die Pflanzen ein eigenes hydroponisches
+                System (NFT, Tiefwasser-Kultur, usw.) verwenden, das gewartet werden muss. Die Symbiose kann, wenn
+                richtig durchgeführt wird, durchaus einen Mehrwert schaffen<sup>20</sup>.
+            </p>
 
-            <h3 id="global-assumptions">Global Assumptions, Options and Trades</h3>
+            <h2 id="fazit">Fazit</h2>
+            <p>
+                Vertical Farming ist eine Art Nahrungsmittel zu produzieren, das Potential hat. Sie kann dazu beitragen,
+                die CO2-Emission zu reduzieren. Sei es durch Verwendung von erneuerbaren Energien für den Betrieb von
+                elektronischen Komponenten oder der Reduzierung von Transportwegen. Sie kann dabei helfen, vor Ort
+                Nahrungsmittel zu produzieren, auch in Regionen mit suboptimalen Bedingungen für Landwirtschaft, wie im
+                Nahen Osten. Sie kann dazu beitragen, das Grundwasser vor Schäden durch Überdüngung zu schützen oder
+                zumindest zu reduzieren. Sie könnte auch vor übermäßiger Entnahme von Wasser aus Gewässern schützen, da
+                der Wasserverbrauch um 90% geringer ist als bei traditioneller Landwirtschaft. Vertical Farming hat
+                viele Vorteile in Sachen Umwelt und Klimaschutz, jedoch stellt sich die Frage, ob dies auch
+                wirtschaftlich machbar ist. Durch die derzeit hohen Elektrizitätskosten scheint dies, zumindest in
+                Deutschland, schwierig. Die Verkaufspreise vom Ertrag wären nicht wettbewerbsfähig. Andere Länder, wie
+                die USA und Dänemark, haben da bessere Aussichten für ein erfolgreiches Betreiben von Vertical Farming.
+                In Deutschland wird dies voraussichtlich erstmals in kleinerem Umfang getestet werden, wie zum Beispiel
+                bei Siemens in Frankfurt<sup>21</sup>. Auch wenn große kommerzielle Anlagen in Deutschland in der nahen Zukunft nicht
+                Fuß fassen, besteht die Möglichkeit, dass sich kleinere Anlagen im Privaten oder in Gemeindeprojekten
+                etablieren. Es muss auch nicht auf Vertical Farming behaart werden. Anlagen wie Gothem Greens in den USA
+                verwenden die gleichen hydroponischen Systeme (NFT-System bei Gothem Greens) wie bei VF-Anlagen. Da
+                Gothem Greens jedoch Gewächshäuser verwendet, haben sie nicht die hohen Stromkosten, die bei VA-Anlagen
+                anfallen. Somit ist der Verkaufspreis ihrer Nahrungsmittel geringer als bei VA-Anlagen.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam autem blanditiis dicta
-                dignissimos
-                dolor dolorum est facere fuga illo inventore laudantium nostrum nulla numquam, perferendis quidem
-                quisquam
-                recusandae saepe, sit vero. Inventore, iure quae. A eum inventore iste nam, ratione rerum veniam!
-                Dignissimos
-                earum mollitia officiis pariatur ut? Aut id ipsum nam nihil totam vero, voluptates? Alias aut cumque est
-                eum
-                explicabo fugiat porro, quidem repellendus sint vel. Dolor facere iure laborum,</p>
-
-            <h2 id="architectural-layout">Architectural Layout and Internal Configuration</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad commodi consequatur corporis cumque
-                distinctio
-                eum, fugiat id iure, iusto minima necessitatibus nemo nihil nostrum odit optio placeat porro praesentium
-                provident quia rem repellendus sed soluta suscipit ut velit voluptatem voluptates! A amet aut blanditiis
-                culpa
-                cupiditate dignissimos dolore doloremque doloribus eius enim ex explicabo </p>
-
-            <h3 id="baseline-design">Baseline Design</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minus nobis quod sequi!
-                Accusantium,
-                adipisci beatae blanditiis consequatur dicta distinctio doloremque dolorum ea eius eos iste magnam
-                molestiae
-                nemo nulla pariatur praesentium quae quibusdam totam vero voluptas? Amet corporis dicta eius esse
-                eveniet,
-                ex
-                expedita facilis id iure iusto laudantium neque, qui reiciendis repellendus soluta, unde veritatis!
-                Adipisci
-                alias aliquid architecto, cupiditate fuga itaque modi pariatur quia quisquam quod repudiandae sed
-                vero.</p>
-
-            <h3 id="ground-floor">Ground Floor Description</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores aspernatur dicta dolor dolores
-                dolorum ea
-                eligendi esse est excepturi expedita facere fuga fugit, harum hic illum impedit inventore ipsam ipsum
-                molestiae,
-                nobis nostrum obcaecati odit officiis omnis porro praesentium provident quidem recusandae rem, repellat
-                repudiandae sint soluta tempore unde voluptatibus voluptatum? Alias dolor doloribus error exercitationem
-                fugiat
-                ipsum repellendus. Alias aliquam aliquid architecto asperiores autem culpa cumque debitis distinctio, ea
-                eaque
-                excepturi exercitationem fuga, impedit in iure libero natus nihil nulla quas quos ratione recusandae
-                rerum
-                sequi
-                tempore velit? </p>
-
-            <h2 id="crop-cultivator">Crop Cultivator Selection</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad alias assumenda aut autem
-                corporis
-                cum
-                deleniti dignissimos dolore doloribus earum est explicabo facere fugiat ipsa iusto modi nemo nihil nisi
-                odit
-                omnis optio porro praesentium qui quia quos repellendus repudiandae sint unde, ut vel voluptas
-                voluptate! Ab
-                ad
-                architecto asperiores commodi debitis dignissimos eius error eum facere ipsa ipsam itaque iusto
-                labore.</p>
 
             <footer>
-                <p><sup>1</sup> This is an example quote </p>
+
+                <p><sup>1</sup> Pflanzenfabrik (2021): Vertical Farming im Überblick (GUIDE). Online im Internet: https://pflanzenfabrik.de/vertical-farming/ [Stand: 09.01.2025].
+                    <br>
+                    <sup>2</sup> Pflanzenfabrik (2023): Vor- und Nachteile von Hydroponik. Online im Internet: https://pflanzenfabrik.de/21-vorteile-nachteile-von-hydroponik/  [Stand: 09.01.2025].
+                    <br>
+                    <sup>3</sup> Pflanzenfabrik (2023): Einführung in die Hydroponik. Online im Internet: https://pflanzenfabrik.de/hydroponik-einfuehrung/ [Stand: 09.01.2025].
+                    <br>
+                    <sup>4</sup> DEUTSCHES ZENTRUM FÜR LUFT- UND RAUMFAHRT E.V. (DLR) (Hg.) (2015): Vertical Farm 2.0. Designing an Economically Feasible Vertical Farm – A combined European Endeavor
+                    for Sustainable Urban Agriculture. (Abschlussbericht), Bremen: Institute of Space Systems.
+                    <br>
+                    <sup>5</sup> Heinrich Böll Stiftung (2024): Vertical Farming: Revolution oder Illusion? Online im Internet: https://www.boell.de/de/2024/01/09/vertical-farming-revolution-oder-illusion [Stand: 09.01.2025]
+                    <br>
+                    <sup>6</sup> Ebd.
+                    <br>
+                    <sup>7</sup> Gotham Greens (o.J.): Cultivating Cities, and Growing Veggies Too. Online im Internet: https://www.gothamgreens.com/our-farms/ [Stand: 09.01.2025].
+                    <br>
+                    <sup>8</sup> Heinrich Böll Stiftung (2024): Vertical Farming: Revolution oder Illusion? Online im Internet: https://www.boell.de/de/2024/01/09/vertical-farming-revolution-oder-illusion [Stand: 09.01.2025].
+                    <br>
+                    <sup>9</sup> Pflanzenfabrik (2023): Hydroponik Systeme. Online im Internet: https://pflanzenfabrik.de/systeme-der-hydroponik/  [Stand: 09.01.2025].
+                    <br>
+                    <sup>10</sup> Ebd.
+                    <br>
+                    <sup>11</sup> Ebd.
+                    <br>
+                    <sup>12</sup> Ebd.
+                    <br>
+                    <sup>13</sup> Ebd.
+                    <br>
+                    <sup>14</sup> Pflanzenfabrik (2023): Dochtsystem der Hydroponik. Online im Internet: https://pflanzenfabrik.de/dochtsystem-der-hydroponik/ [Stand: 09.01.2025].
+                    <br>
+                    <sup>15</sup> Pflanzenfabrik (2023): Die Tiefwasserkultur. Online im Internet: https://pflanzenfabrik.de/tiefwasserkultur/ [Stand: 09.01.2025].
+                    <br>
+                    <sup>16</sup> Pflanzenfabrik (2023): Das Ebbe- und Flutsystem der Hydroponik. Online im Internet: https://pflanzenfabrik.de/ebbe-und-flutsystem/ [Stand: 09.01.2025].
+                    <br>
+                    <sup>17</sup> Pflanzenfabrik (2023): Das Tropfsystem der Hydroponik. Online im Internet: https://pflanzenfabrik.de/hydroponik-tropfsystem/  [Stand: 09.01.2025].
+                    <br>
+                    <sup>18</sup> Pflanzenfabrik (2024): NFT-System der Hydroponik. Online im Internet: https://pflanzenfabrik.de/nft-system/ [Stand: 09.01.2025].
+                    <br>
+                    <sup>19</sup> Pflanzenfabrik (2023): Aeroponik: Eine Einführung. Online im Internet: https://pflanzenfabrik.de/aeroponik/ [Stand: 09.01.2025].
+                    <br>
+                    <sup>20</sup> Greeny+ (2025): Aquaponik – Das geschlossene Ökosystem für Pflanzen und Fische. Online im Internet: https://greenyplus.com/blogs/blog/aquaponik [Stand: 09.01.2025].
+                    <br>
+                    <sup>21</sup> Siemens (2024): Siemens-Niederlassung Frankfurt betreibt Vertical Farming für den Eigenbedarf. Online im Internet: https://press.siemens.com/de/de/pressemitteilung/siemens-niederlassung-frankfurt-betreibt-vertical-farming-fuer-den-eigenbedarf [Stand: 09.01.2025].
+                </p>
+                <p></p>
+
+
+
             </footer>
 
         </div>
