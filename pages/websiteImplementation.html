@@ -28,7 +28,7 @@
         });
     </script>
     <script
-        defer src="../script.js">
+            defer src="../script.js">
     </script>
 
     <title>Webseitenimplementierung</title>
@@ -99,49 +99,409 @@
 
             <h3 id="introduction">Einleitung</h3>
             <p>
-                in Bearbeitung
+                Für die Webseitenimplementierung wurde klassisches HTML (Hypertext Markup Language), CSS (Cascading
+                Stylesheet) und die Programmiersprache JavaScript verwendet Es wurde nicht für mobile Endgeräte
+                optimiert. Die Ordnerstruktur ist wie folgt aufgebaut:
+            </p>
+            <ul>
+                <li>images</li>
+                <li>pages</li>
+                <li>README.md</li>
+                <li>index.html</li>
+                <li>script.js</li>
+                <li>style.css</li>
+            </ul>
+            <p>
+                Die ersten beiden einträge in der liste, images und pages, sind Ordner. Images beinhaltet die Bilder,
+                die auf der Webseite verwendet werden. Die Bilder sind nicht verlink, da dies die IP-Adresse des
+                Webseitenbesuchers, ohne dessen Zustimmung, an Dritte weiterleiten würde, um die Bilder zu laden. Aus
+                diesem Grund sind alle verwendeten Bilder im images Ordner enthalten.
             </p>
             <p>
-                in Bearbeitung
-            </p>
-            <p>
-                in Bearbeitung
-            </p>
-            <p>
-                in Bearbeitung
-            </p>
-            <p>
-                in Bearbeitung
-            </p>
-            <p>
-                in Bearbeitung
-            </p>
+                Im Ordner pages beinhaltet die aktuellen Webseiten. Diese sind klassische HTML dateien. Die Datei
+                index.html ist nicht in diesem Ordner enthalten. Die index.html Datei dient als Eintrittspunkt für die
+                anderen Webseiten. Github pages schaut nach dem Eintrittspunkt in der höchsten Level der Ordnerstruktur.
+                Damit die Webseite erfolgreich veröffentlicht werden kann, muss die index.html Datei sich in dieser Eben
+                der Ordnerstruktur befinden.
 
+            </p>
+            <p>
+                Die README.md Datei ist ein Markdown file. Markdown Dateien sind einfache Textdateien, die für
+                formatierten Inhalte verwendet werden. Diese werden oft für Dokumentationen verwendet, da sie
+                mathematische Formeln als auch Code gut darstellen können.
+            </p>
+            <p>
+                Die Datei script.js enthält javascript code, die auf dem Computer des Nutzer der Webseite läuft. Dadurch
+                können komplexe funktionen implementiert werden, jedoch sind sie auch eine Sicherheitslücke, da diese
+                willkürlichen Code ausführen können
+            </p>
+            <p>
+                die Datei style.css enthält, wie der Name schon andeuten lässt, den "Style" der Webseite. Zum Beispiel
+                kann hier die Textgröße oder Textfarbe eingestellt werden.
+            </p>
 
 
             <h3 id="github_pages">Github pages</h3>
-            <p> in Bearbeitung</p>
-
-            <h3 id="html">HTML</h3>
-            <p> in Bearbeitung</p>
-
-            <h3 id="css">CSS</h3>
-            <p> in Bearbeitung</p>
-
-            <h3 id="javascript">Javascript</h3>
-            <p> in Bearbeitung</p>
-
-
-
-
+            <p>
+                m Github pages verwenden zu können, wird ein Github Account benötigt. Wenn dieser vorhanden ist, kann
+                man durch die Github pages statische Webseiten auf github hosten<sup>1</sup>. Dieser Service ist
+                kostenlose. Wenn nur ein standard Account zur Verfügung steht, dann ist muss die Repository (Repo), die
+                für die Webseite verwendet werden soll, public (öffentlich einsehbar, bedeutet nicht das Dritte auf
+                diese
+                Repo Dateien hochladen können) sein. Mit einem Enterprise oder Organisationen Account können auch
+                private
+                Repos verwendet werden.
+            </p>
+            <p>
+                Diese Webseite ist unter den Github Repo Kurokousei.github.io zu finden.
+            </p>
             <figure class="image-container">
-                <img src="../images/Gotham_Greens_1.png"
-                     alt="Ein Grünhaus. Das Dach is aus Glass. Auf dem Feld wächst Salad. " class="content-image">
+                <img src="../images/Github_code_tab.png"
+                     alt="Github Repository Code Tab. " class="content-image">
                 <figcaption>
-                    Abb. 1: Ein Grünhaus in dem Salad wächst.
+                    Abb. 1: Github Repo für diese Webseite.
                 </figcaption>
             </figure>
+            <p>
+                Diese Repo beinhaltet alles was diese Webseite ausmacht. Eine Erklärung zu der Ordnerstruktur finden Sie
+                in der Einleitung.
+            </p>
+            <p>
+                Wenn keine Repo bereits vorhanden ist dann muss eine neue erstellt werden.
+                Um ein neuen Repo zu erstellen, klicke Sie oben rechts auf den + Button und dann auf New Repository.
+            </p>
+            <figure class="image-container">
+                <img src="../images/Github_dropdown_new_repository.png"
+                     alt="Zeigt den Dropdown Menu um ein neues Repository zu erstellen. " class="content-image">
+                <figcaption>
+                    Abb. 2: Dropdown Menu um einen neuen Repo zu erstellen.
+                </figcaption>
+            </figure>
+            <p>
+                Dies öffnet eine Webseite, um die Repo zu erstellen und sieht aus wie in Abb. 3.
+            </p>
+            <figure class="image-container">
+                <img src="../images/Github_new_repository.png"
+                     alt="Github Seite um ein neun Repository zu erstellen " class="content-image">
+                <figcaption>
+                    Abb. 3: Github Webseite um einen neuen Repo zu erstellen.
+                </figcaption>
+            </figure>
+            <p>
+                Füllen Sie das Feld für die Repo mit einem beliebigen Namen aus.
+                Bei einem standard Account wählen Sie für die Sichtbarkeit "Public" aus.
+                Fügen Sie die README hinzu und erstellen Sie die REPO.
+            </p>
+            <p>
+                Nun sollte ein leeres Github Repo existieren womit Sie eine Webseite auf Github pages hosten können.
+            </p>
+            <p>
+                Sie können nun oben auf den Settings tab klicken. Dies führt Sie zu den Settings, sieh Abb. 4.
+            </p>
+            <figure class="image-container">
+                <img src="../images/Github_settings_tab.png"
+                     alt="Github Settings Tab " class="content-image">
+                <figcaption>
+                    Abb. 4: Github Setting Tab.
+                </figcaption>
+            </figure>
+            <p>
+                Dort können Sie auf den Pages tab auf der linken Seite klicken. So gelangen Sie auf die Github pages
+                Settings tab.
+            </p>
+            <figure class="image-container">
+                <img src="../images/Github_settings_tab_in_pages_tab.png"
+                     alt="Github Pages Settings Tab " class="content-image">
+                <figcaption>
+                    Abb. 5: Github Pages Settings Tab.
+                </figcaption>
+            </figure>
+            <p>
 
+                Oben auf der Abb. 5, können Sie sehen ob die Webseite derzeit veröffentlicht ist. Durch den roten
+                "unveröffentlichen" Button kann die Webseite wieder Offline genommen werden. Damit eine Webseite von
+                Github pages veröffentlicht wird, muss entweder auf der Repo was verändert worden sein, oder es wird
+                unter Branch von der aktuellen Repo auf ein anderes gewechselt (z.B. zu None). Es kann bis zu 10 Minuten
+                dauern, bis die Veränderungen auf der Webseite zu sehen sind.
+            </p>
+
+            <h3 id="html">HTML</h3>
+            <p> Die HTML Dateien gegen die Struktur der Webseite vor. Sie benötigt die Tags:</p>
+
+            <pre><code>
+                &lt;html&gt;
+                &lt;head&gt;
+
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                &lt;/body&gt;
+
+                &lt;/html&gt;
+            </code></pre>
+
+            <p>
+                für eine valide HTML Datei. Tag haben einen opening Tag und einen closing Tag. Es gibt ausnahmen für
+                diese Regel wie für den link Tag.
+
+            </p>
+            <p>
+                Im head Tag werden Metadaten und Ressourcen angegeben, diese sind nicht auf der Webseite sichtbar.
+            </p>
+
+
+            <pre><code class="language-html">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en" xmlns=""&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport"
+                          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"&gt;
+                    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                    &lt;link rel="stylesheet" href="style.css"&gt;
+                    &lt;script defer src="script.js"&gt;&lt;/script&gt;
+                    &lt;title&gt;Urban Gardening&lt;/title&gt;
+                &lt;/head&gt;
+                </code></pre>
+            <p>
+                Dies kann zumeinst durch eine integrierte Programmierumgebung (IDE), die HTML unterstützt, automatisch
+                generiert werden. Das meisten ist "Boilerplate" Code. Wichtig hier sind die link und script Tags. Der
+                link Tag verknüpft den Stylesheet mit der HTML Datei. Somit kann in der CSS-Datei der Style des HTML
+                geändert werden. Es linkt nicht zu anderen Webseiten.
+                Der script Tag verknüpft eine Javascript-Datei mit der HTML Datei. Somit kann diese Programme auf dem
+                Computer des Nutzers laufen lassen. Das Keyword defer ist hier wichtig. Es sorgt dafür, dass die
+                Javascript-Datei erst nach der HTML Datei läd. Wenn dies nicht der Fall ist kann es zu problemen führen,
+                also ist meistens eine Gute Idee defer zu verwenden.
+            </p>
+            <pre><code
+                    class="language-html">
+                &lt;body class="dark has-sidebar"&gt;
+                        &lt;div class="container-box"&gt;
+                            &lt;nav&gt;
+                                &lt;p&gt;Urban gardening&lt;/p&gt;
+                                &lt;div class="nav-links"&gt;
+                                    &lt;a href="../index.html"&gt;Home&lt;/a&gt;
+                                    &lt;div class="dropdown"&gt;
+                                        &lt;a href="#" class="dropdown-toggle"&gt;Projekte&lt;/a&gt;
+                                        &lt;div class="dropdown-content"&gt;
+                                            &lt;div class="dropdown-item-with-submenu"&gt;
+                                                &lt;a href="#" class="submenu-toggle"&gt;New York City&lt;/a&gt;
+                                                &lt;div class="submenu-container"&gt;
+                                                    &lt;a href="newYork.html"&gt;New York&lt;/a&gt;
+                                                    &lt;a href="kellyStreetGarden.html"&gt;Kelly Streets Garden&lt;/a&gt;
+                                                    &lt;a href="gothamGreens.html"&gt;Gotham Greens&lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="dropdown-item-with-submenu"&gt;
+                                                &lt;a href="#" class="submenu-toggle"&gt;Frankfurt&lt;/a&gt;
+                                                &lt;div class="submenu-container"&gt;
+                                                    &lt;a href="frankfurt.html"&gt;Frankfurt&lt;/a&gt;
+                                                    &lt;a href="gallusGarten.html"&gt;Gallusgarten&lt;/a&gt;
+                                                    &lt;a href="gemueseheldinnen.html"&gt;Gemüseheldinnen&lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    ...
+                                    &lt;button id="theme-toggle" class="theme-toggle" title="Toggle theme"&gt;
+                                        &lt;span id="theme-icon"&gt;☀️&lt;/span&gt;
+                                    &lt;/button&gt;
+                                &lt;/div&gt;
+                            &lt;/nav&gt;
+            </code></pre>
+
+            <p>
+                Oben ist ein Teil des sich im body Tag befinden HTML code zu sehen. Hier sind ein paar weitere Tags zu
+                sehen, die verwendet werden. Die Tags sind:
+
+            </p>
+
+            <ul>
+                <li>div</li>
+                <li>nav</li>
+                <li>p</li>
+                <li>a</li>
+                <li>button</li>
+                <li>span</li>
+            </ul>
+
+            <p>
+                Der nav tag an sich bringt keine Funktionalität. Es hat haber semantische Bedeutung. Screen Reader
+                erkennen dies. Somit is es immer gut solche Tags mit semantischer Bedeutung zu verwenden, wenn es Sinn
+                macht, anstatt einem div. Div Tags sind einfache Behälter. In div Tags können andere tags genistet
+                werden. Über CSS und JS Dateien kann auf die div Tags zugegriffen werden. Dies ermöglichst es zum
+                Beispiel die Textgröße alle Tags im div Tag enthalten sind zu ändern. Dann muss nicht jeder Tag im div
+                Behälter einzeln angesprochen werden.
+                Der p Tag ist für Text vorgesehen. Zum Beispiel befindet sich dieser Text in einem p Tag. der a Tag ist
+                für links zu anderen Webseiten. Die links in der Navigationsleiste verwenden diese. Der button Tag ist
+                selbsterklärend. Der span Tag wird fürs Stylen innerhalb der HTML Datei verwendet. Styling muss nicht
+                immer über CSS Dateien implementiert werden, ist jedoch in den meisten Fällen dem span Tag vorzuziehen.
+            </p>
+
+            <p>
+                Im head Tag werden Metadaten und Ressourcen angegeben, diese sind nicht auf der Webseite sichtbar.
+            </p>
+            <pre><code
+                    class="language-html">
+                &lt;/nav&gt;
+                    &lt;div class="below-header"&gt;
+                        &lt;aside class="table-of-contents"&gt;
+                            &lt;div class="content-of-table-of-contents"&gt;
+                                &lt;h3&gt;Table of Contents&lt;/h3&gt;
+                                &lt;nav&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href="#introduction"&gt;New York City&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/nav&gt;
+                            &lt;/div&gt;
+                        &lt;/aside&gt;
+            </code></pre>
+            <p>
+                Dieser Codeblock im body Tag, direkt unter dem nav Tag, ist die Struktur für den die Seitenleiste. Darin
+                befinden sich die Inhaltsverzeichnisse der Webseiten. Der aside Tag ist auch nur semantisch. Wie dieser
+                aussieht, positioniert ist usw. wird in der CSS Datei implementiert.
+            </p>
+            <p>
+                Weitere Tag, neben dem aside Tag, sind:
+            </p>
+            <ul>
+                <li>h3</li>
+                <li>ul</li>
+                <li>li</li>
+            </ul>
+            <p>
+                Der h3 tag steht für heading3. Das ist praktisch das Gleiche wie in Wortprozessporen wie MS Word oder
+                Google Docs. Es gibt "Table of Contents" die semantische Bedeutung eines Untertitels mit einer
+                vordefinierten Schriftgröße. Es gibt auch h1 und h2 Tags.
+                Der ul Tag ist ein ungeordnete List, während der li Tag eine geordnete Liste ist.
+            </p>
+            <pre><code class="language-html">
+                ...
+                &lt;figure class="image-container"&gt;
+                &lt;img src="../images/New%20York%20City%20.jpg"
+                     alt="Eine Person hält Setzlinge in einem urbanen Gemeinschaftsgarten."
+                     class="content-image"&gt;
+                &lt;figcaption&gt;
+                    Abb. 1: Urbane Landwirtschaft in der Stadt New York.
+                &lt;/figcaption&gt;
+            &lt;/figure&gt;
+            &lt;footer&gt;
+                &lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; NYC Urban Agriculture. (o. D.). https://www.nyc.gov/site/agriculture/index.page &lt;/p&gt;
+            &lt;/footer&gt;
+            </code></pre>
+            <p>
+                Dieser Codeblock befindet sich am ende vom body Tag. Die tags figure, img und figcaption werden
+                verwendet, um ein Bild in die Webseite einzufügen und direkt unterm Bild eine Beschreibung
+                hinzuzufügen. Der img Tag beinhaltet den Pfad des Bildes im System. Er ist benötigt, um das Bild finden
+                zu können. Der figcaption Tag ist für die Beschreibung und durch den figure Tag ist der Behälter für die
+                anderen beiden Tags. Es ist ein Behälter mit semantischer Bedeutung.
+
+            </p>
+            <p>
+                Die class="image-container" im figure opening Tag ermöglichst es durch die CSS Datei diesen Behälter zu
+                stylen. Wenn ein andere Tag die gleiche Klasse hat, dann übernimmt dieser Tag den gleichen Style.
+
+            </p>
+            <h3 id="css">CSS</h3>
+            <p> CSS steht für Cascading Stylesheet. Es ist zuständig für die Presentation und dem Layout der Webseite.
+                In der CSS Datei werden verschiedene Tags, Klassen oder IDs angesprochen, um deren Style oder Layout zu
+                ändern. Folgen ein Beispiel:
+            </p>
+            <pre><code class="language-css">
+                nav p {
+                    margin: 0;
+                    color: var(--text-color);
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+            </code></pre>
+            <p>
+                Hier sind die tags nav und p angegeben. Dies spricht alle p tags im nav Behälter an und ändert ihren
+                Style. Hier werden die Schriftgröße und die Farbe geändert. Wenn der nav Tag fehlen würde, würden alle p
+                Tags auf der Webseite angesprochen werden. Wenn verschiedene solche Codeblöcke existieren, kann es dazu
+                kommen das sie die gleichen Tags, Klassen oder IDs ansprechen. Dann wird nach den Cascading-Regeln
+                entschieden, welches der Codeblöcke letztendlich die Änderung durchführt.
+            </p>
+            <p>
+                Ein Codeblock für Klassen sieht wie folgt aus:
+            </p>
+            <pre><code class="language-css">
+                .content-of-table-of-contents {
+                background-color: var(--md-sys-color-surface-container-high);
+                border-radius: 16px;
+                padding: 15px;
+                border: 1px solid var(--md-sys-color-outline-variant);
+                max-width: 100%;
+                box-sizing: border-box;
+                }
+            </code></pre>
+            <p>
+                In CSS können varibalen definiert werden. Dies sieht wie folgt aus:
+            </p>
+            <pre><code class="language-css">
+                --background: var(--md-sys-color-background);
+                --text-color: var(--md-sys-color-primary-fixed-dim);
+            </code></pre>
+
+            <p>
+                Die -- sind verpflichtend. Damit werden die CSS variablen als custom variables erkannt. Ohne werden sie
+                nur als einen normalen Eigenschaftsnamen behandelt, was zu fehlern führt. Dies erlaubt es nur eine
+                Variable abzuändern, damit alle die die gleiche Variable verwenden, mit abgeändert werden.
+            </p>
+            <p>
+                CSS Eigenschaften<sup>2</sup> werden an dieser Stelle nicht weiter erläutert. Für weitere Information
+                siehe.
+            </p>
+
+            <h3 id="javascript">Javascript</h3>
+            <p>
+                Mit JavaScript lässt sich für die Webseite zusätzliche Funktionalität programmieren. Die JS Datei wird
+                von Nutzer beim besuchen der Webseite heruntergeladen. Das Programm läuft dann auf dem Computer des
+                Nutzers. Da diese Dateien willkürliche Programme auf dem Computer des Nutzers laufen lassen können, kann
+                es ein Sicherheitsrisiko für den Nutzer darstellen.
+            </p>
+            <p>
+                Javascript wird in diesen Projekt dafür verwendet, einen Button sichtbar zu machen, wenn der user 200 px
+                gescrollt hat. Dieser Button scrollt zurück zum Seitenanfang. Die zweite Funktinalität ist das Togglen
+                vom Light mode zum Dark mode und vice versa. Die Preferenze wir im Browser des Nutzers gespeichert, beim
+                aufrufen der Webseite gelesen und dementsprechend gesetzt.
+            </p>
+
+            <pre><code class="language-javascript">
+                const scrollBtn = document.getElementById('scroll-to-top');
+                // Show button when scrolled down
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY &gt; 200) {
+                        scrollBtn.classList.add('visible');
+                    } else {
+                        scrollBtn.classList.remove('visible');
+                    }
+                });
+            </code></pre>
+            <p>
+                Dieser Codeblock checked ob der Nutzer 200 px runtergescrolled hat. Wenn ja dann wird der Button
+                sichtbar gemacht. In der ersten Zeile wird der Button in einer konstanten veriable gespeichert. Durch
+                die ID des Buttons steht fest, welche Button angesprochen werden sollen.
+            </p>
+            <pre><code class="language-html">
+                &lt;button id="scroll-to-top" class="scroll-top-btn" title="Back to top"&gt;↑&lt;/button&gt;
+            </code></pre>
+            <p>
+                Dieser button Tag ist auf jeder Webseite über dem closing body Tag. Die ID ist scroll-to-top. Die
+                getElememtById() function findet so welcher Button sichtbar gemacht werden soll. Es wird ein
+                EventListener verwendet, um zu checken, ob der Nutzer beim scrollen insgesamt mehr als 200 px gescrollt
+                hat. Wenn ja dann ist der Button sichtbar. Unter 200 px bleibt der Button unsichtbar.
+            </p>
+
+            <footer>
+
+                <p>
+                    <sup>1</sup>https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-a-repository-for-your-site
+                    <br>
+                    <sup>2</sup>https://www.w3schools.com/CSSref/index.php
+                </p>
+
+            </footer>
         </div>
     </div>
 </div>
