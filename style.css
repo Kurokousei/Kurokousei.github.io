@@ -513,8 +513,12 @@ table {
     border-collapse: collapse;
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+    caption-side: bottom;
 
+}
+caption {
+   color: var(--text-color);
+}
 thead {
     background-color: #4CAF50;
     color: white;
@@ -540,6 +544,7 @@ tbody tr:hover {
 tbody tr:last-child td {
     border-bottom: none;
 }
+
 
 
 /*--------------------------------------Main Content------------------------------------*/
@@ -570,7 +575,7 @@ footer {
 footer p {
    margin: 20px 10px;
    text-align: left;
-   font-size: .75rem;
+   font-size: .8rem;
 }
 
 /*--------------------------------------Code Styling------------------------------------*/
