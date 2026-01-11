@@ -3,37 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css"
-          integrity="sha384-WcoG4HRXMzYzfCgiyfrySxx90XSl2rxY5mnVY5TwtWE6KLrArNKn0T/mOgNL0Mmi" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.js"
-            integrity="sha384-J+9dG2KMoiR9hqcFao0IBLwxt6zpcyN68IgwzsCSkbreXUjmNVRhPFTssqdSGjwQ"
-            crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/auto-render.min.js"
-            integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh"
-            crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            renderMathInElement(document.body, {
-                // customised options
-                // • auto-render specific keys, e.g.:
-                delimiters: [
-                    {left: '$$', right: '$$', display: true},
-                    {left: '$', right: '$', display: false},
-                    {left: '\\(', right: '\\)', display: false},
-                    {left: '\\[', right: '\\]', display: true}
-                ],
-                // • rendering keys, e.g.:
-                throwOnError: false
-            });
-        });
-    </script>
-    <script
-            defer src="../script.js">
-    </script>
-
+    <script defer src="../script.js"></script>
     <title>Webseitenimplementierung</title>
 </head>
-
 <body class="dark has-sidebar">
 <div class="container-box">
     <nav>
@@ -52,14 +24,12 @@
                             <a href="gothamGreens.html">Gotham Greens</a>
                         </div>
                     </div>
-
                     <div class="dropdown-item-with-submenu">
                         <a href="#" class="submenu-toggle">Frankfurt</a>
                         <div class="submenu-container">
                             <a href="frankfurt.html">Frankfurt</a>
                             <a href="gallusGarten.html">Gallusgarten</a>
                             <a href="gemueseheldinnen.html">Gemüseheldinnen</a>
-
                         </div>
                     </div>
                 </div>
@@ -91,15 +61,13 @@
                 </nav>
             </div>
         </aside>
-
-
         <div class="main-content">
             <h1 id="title">Webseitenimplementierung</h1>
 
             <h2 id="introduction">Einleitung</h2>
             <p>
                 Für die Webseitenimplementierung wurde klassisches HTML (Hypertext Markup Language), CSS (Cascading
-                Stylesheet) und die Programmiersprache JavaScript verwendet Es wurde nicht für mobile Endgeräte
+                Stylesheet) und die Programmiersprache JavaScript verwendet. Es wurde nicht für mobile Endgeräte
                 optimiert. Die Ordnerstruktur ist wie folgt aufgebaut:
             </p>
             <ul>
@@ -130,7 +98,7 @@
                 mathematische Formeln als auch Code gut darstellen können.
             </p>
             <p>
-                Die Datei script.js enthält javascript code, die auf dem Computer des Nutzer der Webseite läuft. Dadurch
+                Die Datei script.js enthält javascript code, die auf dem Computer des Nutzers der Webseite läuft. Dadurch
                 können komplexe funktionen implementiert werden, jedoch sind sie auch eine Sicherheitslücke, da diese
                 willkürlichen Code ausführen können
             </p>
@@ -138,13 +106,11 @@
                 die Datei style.css enthält, wie der Name schon andeuten lässt, den "Style" der Webseite. Zum Beispiel
                 kann hier die Textgröße oder Textfarbe eingestellt werden.
             </p>
-
-
             <h2 id="github_pages">Github pages</h2>
             <p>
                 m Github pages verwenden zu können, wird ein Github Account benötigt. Wenn dieser vorhanden ist, kann
                 man durch die Github pages statische Webseiten auf github hosten<sup>1</sup>. Dieser Service ist
-                kostenlose. Wenn nur ein standard Account zur Verfügung steht, dann ist muss die Repository (Repo), die
+                kostenlos. Wenn nur ein standard Account zur Verfügung steht, dann ist muss die Repository (Repo), die
                 für die Webseite verwendet werden soll, public (öffentlich einsehbar, bedeutet nicht das Dritte auf
                 diese
                 Repo Dateien hochladen können) sein. Mit einem Enterprise oder Organisationen Account können auch
@@ -162,7 +128,7 @@
                 </figcaption>
             </figure>
             <p>
-                Diese Repo beinhaltet alles was diese Webseite ausmacht. Eine Erklärung zu der Ordnerstruktur finden Sie
+                Diese Repo beinhaltet alles, was diese Webseite ausmacht. Eine Erklärung zu der Ordnerstruktur finden Sie
                 in der Einleitung.
             </p>
             <p>
@@ -216,17 +182,14 @@
                 </figcaption>
             </figure>
             <p>
-
                 Oben auf der Abb. 5, können Sie sehen ob die Webseite derzeit veröffentlicht ist. Durch den roten
                 "unveröffentlichen" Button kann die Webseite wieder Offline genommen werden. Damit eine Webseite von
                 Github pages veröffentlicht wird, muss entweder auf der Repo was verändert worden sein, oder es wird
                 unter Branch von der aktuellen Repo auf ein anderes gewechselt (z.B. zu None). Es kann bis zu 10 Minuten
                 dauern, bis die Veränderungen auf der Webseite zu sehen sind.
             </p>
-
             <h2 id="html">HTML</h2>
             <p> Die HTML Dateien gegen die Struktur der Webseite vor. Sie benötigt die Tags:</p>
-
             <pre><code>
                 &lt;html&gt;
                 &lt;head&gt;
@@ -238,17 +201,13 @@
 
                 &lt;/html&gt;
             </code></pre>
-
             <p>
                 für eine valide HTML Datei. Tag haben einen opening Tag und einen closing Tag. Es gibt ausnahmen für
                 diese Regel wie für den link Tag.
-
             </p>
             <p>
                 Im head Tag werden Metadaten und Ressourcen angegeben, diese sind nicht auf der Webseite sichtbar.
             </p>
-
-
             <pre><code class="language-html">
                 &lt;!DOCTYPE html&gt;
                 &lt;html lang="en" xmlns=""&gt;
@@ -263,13 +222,13 @@
                 &lt;/head&gt;
                 </code></pre>
             <p>
-                Dies kann zumeinst durch eine integrierte Programmierumgebung (IDE), die HTML unterstützt, automatisch
+                Dies kann meistens durch eine integrierte Programmierumgebung (IDE), die HTML unterstützt, automatisch
                 generiert werden. Das meisten ist "Boilerplate" Code. Wichtig hier sind die link und script Tags. Der
-                link Tag verknüpft den Stylesheet mit der HTML Datei. Somit kann in der CSS-Datei der Style des HTML
+                link Tag verknüpft den Stylesheet mit der HTML-Datei. Somit kann in der CSS-Datei der Style des HTML
                 geändert werden. Es linkt nicht zu anderen Webseiten.
-                Der script Tag verknüpft eine Javascript-Datei mit der HTML Datei. Somit kann diese Programme auf dem
+                Der script Tag verknüpft eine Javascript-Datei mit der HTML-Datei. Somit kann diese Programme auf dem
                 Computer des Nutzers laufen lassen. Das Keyword defer ist hier wichtig. Es sorgt dafür, dass die
-                Javascript-Datei erst nach der HTML Datei läd. Wenn dies nicht der Fall ist kann es zu problemen führen,
+                Javascript-Datei erst nach der HTML-Datei läd. Wenn dies nicht der Fall ist kann es zu problemen führen,
                 also ist meistens eine Gute Idee defer zu verwenden.
             </p>
             <pre><code
@@ -308,13 +267,11 @@
                                 &lt;/div&gt;
                             &lt;/nav&gt;
             </code></pre>
-
             <p>
                 Oben ist ein Teil des sich im body Tag befinden HTML code zu sehen. Hier sind ein paar weitere Tags zu
                 sehen, die verwendet werden. Die Tags sind:
 
             </p>
-
             <ul>
                 <li>div</li>
                 <li>nav</li>
@@ -323,20 +280,18 @@
                 <li>button</li>
                 <li>span</li>
             </ul>
-
             <p>
                 Der nav tag an sich bringt keine Funktionalität. Es hat haber semantische Bedeutung. Screen Reader
                 erkennen dies. Somit is es immer gut solche Tags mit semantischer Bedeutung zu verwenden, wenn es Sinn
                 macht, anstatt einem div. Div Tags sind einfache Behälter. In div Tags können andere tags genistet
-                werden. Über CSS und JS Dateien kann auf die div Tags zugegriffen werden. Dies ermöglichst es zum
+                werden. Über CSS und JS Dateien kann auf die div Tags zugegriffen werden. Dies ermöglicht es zum
                 Beispiel die Textgröße alle Tags im div Tag enthalten sind zu ändern. Dann muss nicht jeder Tag im div
                 Behälter einzeln angesprochen werden.
                 Der p Tag ist für Text vorgesehen. Zum Beispiel befindet sich dieser Text in einem p Tag. der a Tag ist
                 für links zu anderen Webseiten. Die links in der Navigationsleiste verwenden diese. Der button Tag ist
-                selbsterklärend. Der span Tag wird fürs Stylen innerhalb der HTML Datei verwendet. Styling muss nicht
+                selbsterklärend. Der span Tag wird fürs Stylen innerhalb der HTML-Datei verwendet. Styling muss nicht
                 immer über CSS Dateien implementiert werden, ist jedoch in den meisten Fällen dem span Tag vorzuziehen.
             </p>
-
             <p>
                 Im head Tag werden Metadaten und Ressourcen angegeben, diese sind nicht auf der Webseite sichtbar.
             </p>
@@ -372,7 +327,7 @@
                 Der h3 tag steht für heading3. Das ist praktisch das Gleiche wie in Wortprozessporen wie MS Word oder
                 Google Docs. Es gibt "Table of Contents" die semantische Bedeutung eines Untertitels mit einer
                 vordefinierten Schriftgröße. Es gibt auch h1 und h2 Tags.
-                Der ul Tag ist ein ungeordnete List, während der li Tag eine geordnete Liste ist.
+                Der ul Tag ist eine ungeordnete List, während der li Tag eine geordnete Liste ist.
             </p>
             <pre><code class="language-html">
                 ...
@@ -394,12 +349,10 @@
                 hinzuzufügen. Der img Tag beinhaltet den Pfad des Bildes im System. Er ist benötigt, um das Bild finden
                 zu können. Der figcaption Tag ist für die Beschreibung und durch den figure Tag ist der Behälter für die
                 anderen beiden Tags. Es ist ein Behälter mit semantischer Bedeutung.
-
             </p>
             <p>
-                Die class="image-container" im figure opening Tag ermöglichst es durch die CSS Datei diesen Behälter zu
-                stylen. Wenn ein andere Tag die gleiche Klasse hat, dann übernimmt dieser Tag den gleichen Style.
-
+                Die class="image-container" im figure opening Tag ermöglicht es durch die CSS Datei diesen Behälter zu
+                stylen. Wenn ein anderer Tag die gleiche Klasse hat, dann übernimmt dieser Tag den gleichen Style.
             </p>
             <h2 id="css">CSS</h2>
             <p> CSS steht für Cascading Stylesheet. Es ist zuständig für die Presentation und dem Layout der Webseite.
@@ -435,13 +388,12 @@
                 }
             </code></pre>
             <p>
-                In CSS können varibalen definiert werden. Dies sieht wie folgt aus:
+                In CSS können variablen definiert werden. Dies sieht wie folgt aus:
             </p>
             <pre><code class="language-css">
                 --background: var(--md-sys-color-background);
                 --text-color: var(--md-sys-color-primary-fixed-dim);
             </code></pre>
-
             <p>
                 Die -- sind verpflichtend. Damit werden die CSS variablen als custom variables erkannt. Ohne werden sie
                 nur als einen normalen Eigenschaftsnamen behandelt, was zu fehlern führt. Dies erlaubt es nur eine
@@ -451,21 +403,19 @@
                 CSS Eigenschaften<sup>2</sup> werden an dieser Stelle nicht weiter erläutert. Für weitere Information
                 siehe.
             </p>
-
             <h2 id="javascript">Javascript</h2>
             <p>
                 Mit JavaScript lässt sich für die Webseite zusätzliche Funktionalität programmieren. Die JS Datei wird
-                von Nutzer beim besuchen der Webseite heruntergeladen. Das Programm läuft dann auf dem Computer des
+                von Nutzer beim Besuchen der Webseite heruntergeladen. Das Programm läuft dann auf dem Computer des
                 Nutzers. Da diese Dateien willkürliche Programme auf dem Computer des Nutzers laufen lassen können, kann
                 es ein Sicherheitsrisiko für den Nutzer darstellen.
             </p>
             <p>
-                Javascript wird in diesen Projekt dafür verwendet, einen Button sichtbar zu machen, wenn der user 200 px
-                gescrollt hat. Dieser Button scrollt zurück zum Seitenanfang. Die zweite Funktinalität ist das Togglen
-                vom Light mode zum Dark mode und vice versa. Die Preferenze wir im Browser des Nutzers gespeichert, beim
+                Javascript wird in diesem Projekt dafür verwendet, einen Button sichtbar zu machen, wenn der user 200 px
+                gescrollt hat. Dieser Button scrollt zurück zum Seitenanfang. Die zweite Funktionalität ist das Togglen
+                vom Light mode zum Dark mode und vice versa. Die Präferenz wir im Browser des Nutzers gespeichert, beim
                 aufrufen der Webseite gelesen und dementsprechend gesetzt.
             </p>
-
             <pre><code class="language-javascript">
                 const scrollBtn = document.getElementById('scroll-to-top');
                 // Show button when scrolled down
@@ -478,8 +428,8 @@
                 });
             </code></pre>
             <p>
-                Dieser Codeblock checked ob der Nutzer 200 px runtergescrolled hat. Wenn ja dann wird der Button
-                sichtbar gemacht. In der ersten Zeile wird der Button in einer konstanten veriable gespeichert. Durch
+                Dieser Codeblock überprüft ob der Nutzer 200 px runter gescrollt hat. Wenn ja, dann wird der Button
+                sichtbar gemacht. In der ersten Zeile wird der Button in einer konstanten Variable gespeichert. Durch
                 die ID des Buttons steht fest, welche Button angesprochen werden sollen.
             </p>
             <pre><code class="language-html">
@@ -489,11 +439,9 @@
                 Dieser button Tag ist auf jeder Webseite über dem closing body Tag. Die ID ist scroll-to-top. Die
                 getElememtById() function findet so welcher Button sichtbar gemacht werden soll. Es wird ein
                 EventListener verwendet, um zu checken, ob der Nutzer beim scrollen insgesamt mehr als 200 px gescrollt
-                hat. Wenn ja dann ist der Button sichtbar. Unter 200 px bleibt der Button unsichtbar.
+                hat. Wenn ja, dann ist der Button sichtbar. Unter 200 px bleibt der Button unsichtbar.
             </p>
-
             <footer>
-
                 <p>
                     <sup>1</sup> Github Docs (o.J.): Creating a GitHub Pages site. Online im Internet:
                     https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-a-repository-for-your-site
@@ -502,7 +450,6 @@
                     <sup>2</sup> W3SCHOOLS (o.J.): CSS Reference. Online im Internet:
                     https://www.w3schools.com/CSSref/index.php [Stand: 10.01.2026].
                 </p>
-
             </footer>
         </div>
     </div>
