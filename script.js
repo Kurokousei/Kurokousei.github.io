@@ -1,7 +1,7 @@
 const scrollBtn = document.getElementById('scroll-to-top');
 
 // Show button when scrolled down
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     if (window.scrollY > 200) {
         scrollBtn.classList.add('visible');
     } else {
@@ -10,14 +10,14 @@ window.addEventListener('scroll', function() {
 });
 
 // Scroll to top when clicked
-scrollBtn.addEventListener('click', function() {
+scrollBtn.addEventListener('click', function () {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
 });
 // Theme toggle functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
     const body = document.body;
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Listen for system theme changes (only if user hasn't manually set a preference)
     const systemThemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    systemThemeQuery.addEventListener('change', function(e) {
+    systemThemeQuery.addEventListener('change', function (e) {
         // Only auto-switch if user hasn't saved a preference
         if (!localStorage.getItem('theme')) {
             const newTheme = e.matches ? 'dark' : 'light';
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Toggle theme on button click
-    themeToggle.addEventListener('click', function() {
+    themeToggle.addEventListener('click', function () {
         if (body.classList.contains('dark')) {
             body.classList.remove('dark');
             body.classList.add('light');
@@ -72,15 +72,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
 // Dropdown on click
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const dropdowns = document.querySelectorAll('.dropdown');
 
     dropdowns.forEach(dropdown => {
         const toggle = dropdown.querySelector('.dropdown-toggle');
 
-        toggle.addEventListener('click', function(e) {
+        toggle.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
 
@@ -91,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            // Toggle current dropdown
             dropdown.classList.toggle('active');
         });
     });
@@ -99,20 +97,36 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle submenu clicks
     const submenuToggles = document.querySelectorAll('.submenu-toggle');
     submenuToggles.forEach(toggle => {
-        toggle.addEventListener('click', function(e) {
+        toggle.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
 
             const parent = this.closest('.dropdown-item-with-submenu');
-            parent.classList.toggle('active');
+            const isCurrentlyActive = parent.classList.contains('active');
+
+
+            const allSubmenus = document.querySelectorAll('.dropdown-item-with-submenu');
+            allSubmenus.forEach(submenu => {
+                submenu.classList.remove('active');
+            });
+
+
+            if (!isCurrentlyActive) {
+                parent.classList.add('active');
+            }
         });
     });
 
     // Close dropdowns when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (!e.target.closest('.dropdown')) {
             dropdowns.forEach(dropdown => {
                 dropdown.classList.remove('active');
+            });
+
+            const allSubmenus = document.querySelectorAll('.dropdown-item-with-submenu');
+            allSubmenus.forEach(submenu => {
+                submenu.classList.remove('active');
             });
         }
     });
